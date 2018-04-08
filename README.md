@@ -1,8 +1,3 @@
-# Bare React Starter Kit
+# The Royal Game of Ur
 
-## Contents:
-
-- React (v. 16.3)
-- Webpack with dev server
-- SASS Modules (eg SASS with CSS Modules)
-- Babel
+Made with React (WIP)
