@@ -9,7 +9,7 @@ import type {DieType} from './Dice.types.js';
 */
 const Die = ({
   face,
-}: DieType) => {
+}: DieType): React$Element<string> => {
   return (
     <div>
       <img src={face === 'heads' ? headsImg : tailsImg} alt=""/>
@@ -17,7 +17,14 @@ const Die = ({
   );
 };
 
-const Dice = () => (
+let x: $ReadOnlyArray<number> = [1, 2, 3];
+x;
+
+const testy = (s: string) => s;
+let newTest = testy('1');
+newTest === '1';
+
+const Dice = (): React$Element<string> => (
   <div>
     <Die face={'heads'} key={1} />;
     <Die face={'tails'} key={2} />;

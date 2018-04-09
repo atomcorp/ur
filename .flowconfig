@@ -2,12 +2,4 @@
 .*/node_modules/fbjs/.*
 .*/git/.*
 
-[include]
-./src
-
-[libs]
-
 [options]
-include_warnings=true
-
-[lints]
