@@ -1,8 +1,9 @@
-const THROW_DICE ={
-  START: 'THROW_DICE_START',
-  END: 'THROW_DICE_END',
-};
+// @flow
+
+const THROW_DICE_END = 'THROW_DICE_END';
+const THROW_DICE_START = 'THROW_DICE_START';
 
 export {
-  THROW_DICE,
+  THROW_DICE_END,
+  THROW_DICE_START,
 };

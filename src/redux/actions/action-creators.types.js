@@ -1,5 +1,9 @@
 // @flow
-import type {DiceStateFacesType} from '../reducers/reducers.types.js';
+import type {
+  DiceStateFacesType,
+  DiceActionType,
+} from '../reducers/reducers.types.js';
 
 export type FacesType = DiceStateFacesType
 
+export type AllActionsType = DiceActionType

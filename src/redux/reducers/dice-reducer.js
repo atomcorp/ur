@@ -16,7 +16,7 @@ const dice = (
   action: DiceActionType,
 ) => {
   switch (action.type) {
-    case ACTION_TYPES.THROW_DICE.END:
+    case ACTION_TYPES.THROW_DICE_END:
       return Object.assign({}, state, {
         faces: [...action.faces],
         total: action.faces.reduce(
@@ -25,7 +25,7 @@ const dice = (
         ),
         throwing: false,
       });
-    case ACTION_TYPES.THROW_DICE.START:
+    case ACTION_TYPES.THROW_DICE_START:
       return Object.assign({}, state, {
         throwing: true,
       });

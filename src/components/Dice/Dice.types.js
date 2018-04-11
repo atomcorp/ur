@@ -1,6 +1,6 @@
 // @flow
 export type DieType = {
-  face: string,
+  face: number,
 }
 
 export type ThingType = {
