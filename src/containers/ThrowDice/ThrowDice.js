@@ -23,7 +23,15 @@ class ThrowDice extends Component<PropsType, StateType> {
   handleClick = () => {
     this.props.dice.throwing
       ? this.props.startRoll()
-      : this.props.endRoll([1, 1, 0, 1]);
+      : this.props.endRoll(this.rollDice());
+  }
+  rollDie(): 0 | 1 {
+    return Math.round(Math.random());
+  }
+  rollDice(): DiceStateFacesType {
+    return Array.from(Array(4)).fill(0).map(
+      (val: 0) => this.rollDie()
+    );
   }
   render(): * {
     return (

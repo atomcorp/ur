@@ -20,12 +20,13 @@ const Die = ({
   );
 };
 
-const Dice = () => (
+const Dice = ({faces}) => (
   <div>
-    <Die face={0} key={1} />
-    <Die face={0} key={2} />
-    <Die face={0} key={3} />
-    <Die face={0} key={4} />
+    {
+      faces.map((face, index) => {
+        return <Die face={face} key={index} />;
+      })
+    }
   </div>
 );
 
