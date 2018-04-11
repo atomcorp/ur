@@ -5,7 +5,7 @@ const state = {
   total: 0,
   throwing: false,
 };
-test('Dice reducers work OK', () => {
+test('Dice reducer works OK', () => {
   let action1 = {
     type: ACTION_TYPES.THROW_DICE.START,
   };
