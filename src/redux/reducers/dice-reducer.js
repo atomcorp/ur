@@ -18,7 +18,7 @@ const dice = (
   switch (action.type) {
     case ACTION_TYPES.THROW_DICE.END:
       return Object.assign({}, state, {
-        faces: [action.faces],
+        faces: [...action.faces],
         total: action.faces.reduce(
           (acc: number, val: number) => acc + val,
           0
