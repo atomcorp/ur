@@ -12,7 +12,10 @@ const Die = ({
 }: DieType): React$Element<string> => {
   return (
     <div>
-      <img src={face === 'heads' ? headsImg : tailsImg} alt=""/>
+      <img
+        width={'150'}
+        src={face === 'heads' ? headsImg : tailsImg}
+        alt=""/>
     </div>
   );
 };
@@ -24,7 +27,7 @@ const testy = (s: string) => s;
 let newTest = testy('1');
 newTest === '1';
 
-const Dice = (): React$Element<string> => (
+const Dice = () => (
   <div>
     <Die face={'heads'} key={1} />;
     <Die face={'tails'} key={2} />;
