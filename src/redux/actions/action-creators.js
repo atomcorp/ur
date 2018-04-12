@@ -5,9 +5,13 @@ import {
 import {
   updateBoard,
 } from './board-actions';
+import {
+  togglePlayersTurn,
+} from './player-actions';
 
 export {
   throwDiceStart,
   throwDiceEnd,
   updateBoard,
+  togglePlayersTurn,
 };
