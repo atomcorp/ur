@@ -7,7 +7,7 @@ import type {
   PlayersActionType,
 } from './reducers.types';
 
-const initialPlayerState = {
+export const initialPlayerState = {
   playerA: {
     name: 'Player A',
     tokensAtEnd: 0,
@@ -45,7 +45,7 @@ const players = (
     case ACTION_TYPES.PLAYER_GETS_TOKEN_HOME:
       return Object.assign({}, state, {
         [action.playerId]: {
-          tokensAtStart: ++state[action.playerId].tokensAtEnd,
+          tokensAtEnd: ++state[action.playerId].tokensAtEnd,
         },
       });
     default:

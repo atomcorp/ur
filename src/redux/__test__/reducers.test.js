@@ -1,5 +1,8 @@
 import dice from '../reducers/dice-reducer';
 import board from '../reducers/board-reducer';
+import players, {
+  initialPlayerState,
+} from '../reducers/players-reducer';
 
 import {ACTION_TYPES} from '../actions';
 import constructBoard from '../../components/Board/constructBoard';
@@ -41,6 +44,32 @@ test('Board reducer works', () => {
   })).toEqual(Object.assign({}, state, {
     ['a1']: {
       occupied: 'player2',
+    },
+  }));
+});
+
+test('Players reducer works', () => {
+  expect(players(undefined, {})).toEqual(initialPlayerState);
+  const state = initialPlayerState;
+  expect(players(state, {
+    type: ACTION_TYPES.PLAYER_GETS_TOKEN_HOME,
+    playerId: 'playerA',
+  })).toEqual(Object.assign({}, state, {
+    ['playerA']: {
+      tokensAtEnd: 1,
+    },
+  }));
+  const state2 = Object.assign({}, initialPlayerState, {
+    ['playerB']: {
+      tokensAtStart: 4,
+    },
+  });
+  expect(players(state2, {
+    type: ACTION_TYPES.PLAYER_HAS_TOKEN_RESET,
+    playerId: 'playerB',
+  })).toEqual(Object.assign({}, state2, {
+    ['playerB']: {
+      tokensAtStart: 5,
     },
   }));
 });
