@@ -7,7 +7,7 @@ const state = {
 };
 test('Dice reducer works OK', () => {
   let action1 = {
-    type: ACTION_TYPES.THROW_DICE.START,
+    type: ACTION_TYPES.THROW_DICE_START,
   };
   expect(dice(state, action1)).toEqual({
     faces: [0, 0, 0, 0],
@@ -15,7 +15,7 @@ test('Dice reducer works OK', () => {
     throwing: true,
   });
   let action2 = {
-    type: ACTION_TYPES.THROW_DICE.END,
+    type: ACTION_TYPES.THROW_DICE_END,
     faces: [1, 1, 0, 1],
   };
   expect(dice(state, action2)).toEqual({

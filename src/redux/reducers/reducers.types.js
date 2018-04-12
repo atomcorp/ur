@@ -20,6 +20,11 @@ export type DiceActionType = {
 export type SquareOwnerType = 'playerA' | 'playerB' | 'battle'
 export type OccupiedType = 'playerA' | 'playerB' | 'empty'
 
+export type BoardActionType = {
+  squareId: string,
+  occupied: OccupiedType,
+}
+
 export type UpdateBoardType = {
   type: 'ACTION_TYPES',
   squareId: string,

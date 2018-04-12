@@ -4,7 +4,7 @@ import {
 } from './dice-actions';
 import {
   updateBoard,
-} from './dice-actions';
+} from './board-actions';
 
 export {
   throwDiceStart,
