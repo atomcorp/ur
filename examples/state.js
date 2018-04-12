@@ -8,6 +8,9 @@ const state = {
       a1: {
         pieces: [],
       },
+      b1: {
+
+      },
     },
   },
 };

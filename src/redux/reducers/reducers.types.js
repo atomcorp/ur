@@ -17,3 +17,24 @@ export type DiceActionType = {
   throwing: false,
 }
 
+export type SquareOwnerType = 'playerA' | 'playerB' | 'battle'
+export type OccupiedType = 'playerA' | 'playerB' | 'empty'
+
+export type UpdateBoardType = {
+  type: 'ACTION_TYPES',
+  squareId: string,
+  occupied: OccupiedType,
+}
+
+export type BoardActionsType = UpdateBoardType
+
+export type BoardStateItemsType = {
+  squareOwner: SquareOwnerType,
+  occupied: OccupiedType,
+  isRosette: true | false,
+  trackNumber: number,
+}
+
+export type BoardStateType = {
+  [squareId: string]: BoardStateItemsType,
+}

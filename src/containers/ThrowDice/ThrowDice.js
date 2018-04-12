@@ -39,7 +39,9 @@ class ThrowDice extends Component<PropsType, StateType> {
         <button onClick={
           this.handleClick
         }>
-          Throw dice
+          {
+            this.props.dice.throwing ? 'Throwing...' : 'Throw dice'
+          }
         </button>
       </div>
     );
