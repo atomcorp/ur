@@ -24,3 +24,17 @@ test('Can send updates to the board', () => {
     occupied: 'player1',
   });
 });
+
+test('Can send player updates', () => {
+  expect(ACTION_CREATORS.togglePlayersTurn()).toEqual({
+    type: ACTION_TYPES.TOGGLE_PLAYERS_TURN,
+  });
+  expect(ACTION_CREATORS.playerHasTokenReset('playerA')).toEqual({
+    type: ACTION_TYPES.PLAYER_HAS_TOKEN_RESET,
+    playerId: 'playerA',
+  });
+  expect(ACTION_CREATORS.playerGetsTokenHome('playerB')).toEqual({
+    type: ACTION_TYPES.PLAYER_GETS_TOKEN_HOME,
+    playerId: 'playerB',
+  });
+});

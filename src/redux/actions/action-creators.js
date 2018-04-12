@@ -7,6 +7,8 @@ import {
 } from './board-actions';
 import {
   togglePlayersTurn,
+  playerGetsTokenHome,
+  playerHasTokenReset,
 } from './player-actions';
 
 export {
@@ -14,4 +16,6 @@ export {
   throwDiceEnd,
   updateBoard,
   togglePlayersTurn,
+  playerGetsTokenHome,
+  playerHasTokenReset,
 };
