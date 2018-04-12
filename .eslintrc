@@ -29,6 +29,7 @@
     "object-curly-spacing": 0,
     "require-jsdoc": 0,
     "babel/no-invalid-this": 1,
+    "no-invalid-this": 0,
     "flowtype/no-mutable-array": 1,
     "flowtype/boolean-style": [
       2,
