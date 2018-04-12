@@ -25,7 +25,7 @@ class ThrowDice extends Component<PropsType, StateType> {
       ? this.props.startRoll()
       : this.props.endRoll(this.rollDice());
   }
-  rollDie(): 0 | 1 {
+  rollDie(): * {
     return Math.round(Math.random());
   }
   rollDice(): DiceStateFacesType {

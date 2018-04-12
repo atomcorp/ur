@@ -3,10 +3,10 @@ import type {
   DiceStateFacesType,
 } from '../../redux/reducers/reducers.types';
 
-export type DieType = {
-  face: number,
+export type StateType = {
+
 }
 
-export type DiceType = {
+export type PropsType = {
   faces: DiceStateFacesType,
 }
