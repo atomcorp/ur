@@ -98,3 +98,11 @@ export type PiecesType = {
 export type PiecesStateType = {
   [playerId: string]: PiecesType,
 }
+
+export type MovePiecesType = {
+  pieceId: string,
+  squareId: string,
+  playerId: string,
+}
+
+export type PiecesActionType = MovePiecesType
