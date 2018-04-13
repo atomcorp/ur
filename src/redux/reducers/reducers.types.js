@@ -103,6 +103,7 @@ export type MovePiecesType = {
   pieceId: string,
   squareId: string,
   playerId: string,
+  type: 'MOVE_PIECE',
 }
 
 export type PiecesActionType = MovePiecesType

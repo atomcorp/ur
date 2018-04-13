@@ -38,3 +38,16 @@ test('Can send player updates', () => {
     playerId: 'playerB',
   });
 });
+
+test('Can send move piece updates', () => {
+  expect(ACTION_CREATORS.movePiece({
+    pieceId: 'piece2',
+    squareId: 's9',
+    playerId: 'playerA',
+  })).toEqual({
+    type: ACTION_TYPES.MOVE_PIECE,
+    pieceId: 'piece2',
+    squareId: 's9',
+    playerId: 'playerA',
+  });
+});

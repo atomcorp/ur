@@ -10,6 +10,9 @@ import {
   playerGetsTokenHome,
   playerHasTokenReset,
 } from './player-actions';
+import {
+  movePiece,
+} from './pieces-actions';
 
 export {
   throwDiceStart,
@@ -18,4 +21,5 @@ export {
   togglePlayersTurn,
   playerGetsTokenHome,
   playerHasTokenReset,
+  movePiece,
 };

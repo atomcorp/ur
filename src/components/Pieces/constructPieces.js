@@ -4,7 +4,7 @@ import type {
 } from '../../redux/reducers/reducers.types';
 
 const constructPieces = () => {
-  ['playerA', 'playerB'].map(
+  return ['playerA', 'playerB'].map(
     (playerId: string) => constructPlayerPiecesSet(playerId)
   ).reduce((acc: PiecesStateType, val: PiecesStateType) => {
     return Object.assign({}, acc, val);

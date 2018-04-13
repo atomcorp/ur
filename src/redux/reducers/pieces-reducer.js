@@ -1,5 +1,5 @@
 // @flow
-import {constructPieces} from '../../components/Pieces/constructPieces';
+import constructPieces from '../../components/Pieces/constructPieces';
 import {MOVE_PIECE} from '../actions/actions-types';
 import type {
   PiecesStateType,
