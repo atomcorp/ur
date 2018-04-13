@@ -86,3 +86,12 @@ export type PlayerGetsTokenHomeType = {
 export type PlayersActionType = TogglePlayersTurnType
   | PlayerHasTokenResetType
   | PlayerGetsTokenHomeType
+
+// Pieces
+export type PiecesType = {
+  [pieceId: string]: string,
+}
+
+export type PiecesStateType = {
+  [playerId: string]: PiecesType,
+}

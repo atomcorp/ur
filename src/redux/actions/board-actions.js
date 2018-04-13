@@ -1,7 +1,7 @@
 // @flow
 
 import {ACTION_TYPES} from './';
-import {BoardActionType} from '../reducers/reducers.types';
+import type {BoardActionType} from '../reducers/reducers.types';
 
 export const updateBoard = (
   {squareId, occupied}: BoardActionType

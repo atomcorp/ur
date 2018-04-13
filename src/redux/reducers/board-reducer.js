@@ -2,7 +2,7 @@
 
 import constructboard from '../../components/Board/constructBoard';
 import {ACTION_TYPES} from '../actions/index';
-import {
+import type {
   BoardStateType,
   BoardActionsType,
 } from './reducers.types';

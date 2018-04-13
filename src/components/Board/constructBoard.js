@@ -1,5 +1,5 @@
 // @flow
-import {BoardStateType} from '../../redux/reducers/reducers.types';
+import type {BoardStateType} from '../../redux/reducers/reducers.types';
 
 const constructBoard = () => {
   return Array.from(Array(20)).fill(1).reduce(
