@@ -12,6 +12,7 @@ export type DiceStateType = {
 export type DiceActionType = {
   type: ACTION_TYPES.THROW_DICE_START,
   throwing: true,
+  faces: DiceStateFacesType,
 } | {
   type: ACTION_TYPES.THROW_DICE_END,
   faces: DiceStateFacesType,
@@ -48,13 +49,14 @@ export type BoardStateType = {
 
 // Players
 
-export type PlayerIdType = 'Player A' | 'Player B'
+export type PlayerIdType = 'playerA' | 'playerB'
 
 export type PlayerAaType = {
   name: 'Player A',
   tokensAtEnd: number,
   tokensAtStart: number,
   isTurn: boolean,
+  playerId: 'playerA',
 }
 
 export type PlayerBbType = {
@@ -62,6 +64,7 @@ export type PlayerBbType = {
   tokensAtEnd: number,
   tokensAtStart: number,
   isTurn: boolean,
+  playerId: 'playerB',
 }
 
 export type PlayersStateType = {
@@ -70,16 +73,16 @@ export type PlayersStateType = {
 }
 
 export type TogglePlayersTurnType = {
-  type: ACTION_TYPES.TOGGLE_PLAYERS_TURN,
+  type: 'TOGGLE_PLAYERS_TURN',
 }
 
 export type PlayerHasTokenResetType = {
-  type: ACTION_TYPES.PLAYER_HAS_TOKEN_RESET,
+  type: 'PLAYER_HAS_TOKEN_RESET',
   playerId: PlayerIdType,
 }
 
 export type PlayerGetsTokenHomeType = {
-  type: ACTION_TYPES.PLAYER_GETS_TOKEN_HOME,
+  type: 'PLAYER_GETS_TOKEN_HOME',
   playerId: PlayerIdType,
 }
 

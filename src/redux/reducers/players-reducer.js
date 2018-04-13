@@ -1,7 +1,4 @@
 // @flow
-import {
-  ACTION_TYPES,
-} from '../actions';
 import type {
   PlayersStateType,
   PlayersActionType,
@@ -13,12 +10,14 @@ export const initialPlayerState = {
     tokensAtEnd: 0,
     tokensAtStart: 7,
     isTurn: true,
+    playerId: 'playerA',
   },
   playerB: {
     name: 'Player B',
     tokensAtEnd: 0,
     tokensAtStart: 7,
     isTurn: false,
+    playerId: 'playerB',
   },
 };
 
@@ -27,22 +26,22 @@ const players = (
   action: PlayersActionType
 ) => {
   switch (action.type) {
-    case ACTION_TYPES.TOGGLE_PLAYERS_TURN:
+    case 'TOGGLE_PLAYERS_TURN':
       return Object.assign({}, state, {
         playerA: {
-          isTurn: !state.playerA.isturn,
+          isTurn: !state.playerA.isTurn,
         },
         playerB: {
-          isTurn: !state.playerB.isturn,
+          isTurn: !state.playerB.isTurn,
         },
       });
-    case ACTION_TYPES.PLAYER_HAS_TOKEN_RESET:
+    case 'PLAYER_HAS_TOKEN_RESET':
       return Object.assign({}, state, {
         [action.playerId]: {
           tokensAtStart: ++state[action.playerId].tokensAtStart,
         },
       });
-    case ACTION_TYPES.PLAYER_GETS_TOKEN_HOME:
+    case 'PLAYER_GETS_TOKEN_HOME':
       return Object.assign({}, state, {
         [action.playerId]: {
           tokensAtEnd: ++state[action.playerId].tokensAtEnd,
