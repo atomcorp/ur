@@ -1,3 +1,3 @@
-# The Royal Game of Ur
+# Urmazing - The Royal Game of Ur
 
 Made with React (WIP)
