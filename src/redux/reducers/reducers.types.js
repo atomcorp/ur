@@ -113,3 +113,12 @@ export type GameStateType = {
 }
 
 export type GameActionType = 'GAME_START' | 'GAME_END'
+
+export type TurnStateType = {
+  turnEnded: boolean,
+  playersTurn: PlayerIdType,
+  canRollDice: boolean,
+}
+
+export type TurnActionType = {}
+
