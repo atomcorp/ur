@@ -11,6 +11,6 @@ const Ur = () => (
     <RenderDice />
     <ThrowDice />
   </div>
-)
+);
 
 export default Ur;

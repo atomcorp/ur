@@ -31,9 +31,9 @@ const dice = (
       });
     case ACTION_TYPES.RESET_DICE:
       return Object.assign({}, state, {
-        faces: [...0, 0, 0, 0],
+        faces: [0, 0, 0, 0],
         throwing: false,
-      })
+      });
     default:
       return state;
   }

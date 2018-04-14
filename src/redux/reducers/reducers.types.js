@@ -112,7 +112,9 @@ export type GameStateType = {
   inProgress: boolean,
 }
 
-export type GameActionType = 'GAME_START' | 'GAME_END'
+export type GameActionType = {
+  type: 'GAME_START' | 'GAME_END',
+}
 
 export type TurnStateType = {
   turnEnded: boolean,
@@ -120,5 +122,11 @@ export type TurnStateType = {
   canRollDice: boolean,
 }
 
-export type TurnActionType = {}
+export type TurnActionType = {
+  type: 'TOGGLE_PLAYERS_TURN'
+  | 'TURN_STARTED'
+  | 'TURN_ENDED'
+  | 'LANDED_ON_ROSETTE',
+  playerId: PlayerIdType,
+}
 

@@ -1,6 +1,6 @@
 // @flow
 import {ACTION_TYPES} from '../actions';
-import {
+import type {
   GameStateType,
   GameActionType,
 } from './reducers.types';
