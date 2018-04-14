@@ -18,7 +18,8 @@ const turn = (
   switch (action.type) {
     case ACTION_TYPES.TOGGLE_PLAYERS_TURN:
       return Object.assign({}, state, {
-        playersTurn: action.playerId,
+        playersTurn: state.playersTurn === 'playerA'
+          ? 'playerB' : 'playerA',
       });
     case ACTION_TYPES.TURN_STARTED:
       return Object.assign({}, state, {

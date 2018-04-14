@@ -127,6 +127,5 @@ export type TurnActionType = {
   | 'TURN_STARTED'
   | 'TURN_ENDED'
   | 'LANDED_ON_ROSETTE',
-  playerId: PlayerIdType,
 }
 

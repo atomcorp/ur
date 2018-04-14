@@ -24,6 +24,7 @@ class ThrowDice extends Component<PropsType, StateType> {
     this.props.dice.throwing
       ? this.props.startRoll()
       : this.props.endRoll(this.rollDice());
+    this.props.togglePlayers();
   }
   rollDie(): * {
     return Math.round(Math.random());
@@ -58,6 +59,9 @@ const mapDispatchToProps = (dispatch: DispatchType) => ({
   },
   endRoll: (faces: DiceStateFacesType) => {
     dispatch(ACTION_CREATORS.throwDiceEnd(faces));
+  },
+  togglePlayers: () => {
+    dispatch(ACTION_CREATORS.togglePlayersTurn());
   },
 });
 

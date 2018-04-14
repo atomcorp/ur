@@ -27,14 +27,20 @@ const players = (
 ) => {
   switch (action.type) {
     case 'TOGGLE_PLAYERS_TURN':
-      return Object.assign({}, state, {
-        playerA: {
-          isTurn: !state.playerA.isTurn,
-        },
-        playerB: {
-          isTurn: !state.playerB.isTurn,
-        },
-      });
+      return Object.assign(
+        {},
+        state,
+        ['playerA', 'playerB'].reduce((
+          acc: PlayersStateType,
+          playerId: string
+        ) => {
+          return Object.assign({}, acc, {
+            [playerId]: Object.assign({}, state[playerId], {
+              isTurn: !state[playerId].isTurn,
+            }),
+          });
+        }, state),
+      );
     case 'PLAYER_HAS_TOKEN_RESET':
       return Object.assign({}, state, {
         [action.playerId]: {
