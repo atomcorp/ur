@@ -1,13 +1,18 @@
+// @flow
 import React from 'react';
 import {connect} from 'react-redux';
-const PlayerStatus = ({playersTurn}) => (
+import type {
+  StoreType,
+} from '../../redux/store.types';
+
+const PlayerStatus = ({playersTurn}: string) => (
   <div>
     Player turn: {playersTurn}
   </div>
 );
 
-const mapStateToProps = (state) => ({
-  playersTurn: state.players[state.turn.playersTurn].name,
+const mapStateToProps = (store: StoreType) => ({
+  playersTurn: store.players[store.turn.playersTurn].name,
 });
 
 export default connect(mapStateToProps)(PlayerStatus);

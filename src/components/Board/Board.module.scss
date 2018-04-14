@@ -1,0 +1,47 @@
+.board {
+  display: grid;
+  grid-template-areas:
+    "a4 s5 b4"
+    "a3 s6 b3"
+    "a2 s7 b2"
+    "a1 s8 b1"
+    ". s9 ."
+    ". s10 ."
+    "a14 s11 b14"
+    "a13 s12 b13";
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+}
+
+@for $i from 1 through 4 {
+  .square--a#{$i} { 
+    grid-area: a#{$i};
+  }
+}
+
+@for $i from 13 through 14 {
+  .square--a#{$i} { 
+    grid-area: a#{$i};
+  }
+}
+
+@for $i from 1 through 4 {
+  .square--b#{$i} { 
+    grid-area: b#{$i};
+  }
+}
+
+@for $i from 13 through 14 {
+  .square--b#{$i} { 
+    grid-area: b#{$i};
+  }
+}
+
+@for $i from 5 through 12 {
+  .square--s#{$i} { 
+    grid-area: s#{$i};
+  }
+}

@@ -12,4 +12,5 @@ export type PropsType = {
   dice: DiceStateType,
   startRoll: () => void,
   endRoll: (DiceStateFacesType) => void,
+  togglePlayers: () => void,
 }
