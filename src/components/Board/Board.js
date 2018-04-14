@@ -3,7 +3,13 @@ import React from 'react';
 
 const Board = () => (
   <div>
-    The Board.
+    <Square />
+  </div>
+);
+
+const Square = () => (
+  <div>
+    Square
   </div>
 );
 

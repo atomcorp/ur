@@ -107,3 +107,9 @@ export type MovePiecesType = {
 }
 
 export type PiecesActionType = MovePiecesType
+
+export type GameStateType = {
+  inProgress: boolean,
+}
+
+export type GameActionType = 'GAME_START' | 'GAME_END'
