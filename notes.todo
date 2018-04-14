@@ -1,0 +1,22 @@
+# Game flow
+Press start button
+Defaults to player one
+What can player do ?
+  Roll dice
+    Dice is < 0
+      End Turn
+    Dice is > 0
+      Can player move? (STATE - go through each peice checking their available moves)
+        No
+          End Turn
+        Yes
+          Move a piece
+            Has piece moved onto an occupied square
+              Yes
+                Opponent gets -1 point
+            Has piece moved onto a Rosette
+              Yes
+                Roll dice again
+            Has piece moved to the last square?
+              Player gets +1 point
+                
