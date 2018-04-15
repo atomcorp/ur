@@ -51,6 +51,7 @@ const determineAndReturnSquare = (index: number) => {
       isRosette,
       occupied: 'empty',
       trackNumber,
+      id: key,
     },
   };
 };

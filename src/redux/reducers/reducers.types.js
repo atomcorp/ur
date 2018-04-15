@@ -41,6 +41,7 @@ export type BoardStateItemsType = {
   occupied: OccupiedType,
   isRosette: true | false,
   trackNumber: number,
+  id: string,
 }
 
 export type BoardStateType = {

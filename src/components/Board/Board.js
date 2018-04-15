@@ -9,7 +9,7 @@ const Board = ({boardData}: BoardStateType) => (
   <div className={styles.board}>
     {
       Object.keys(boardData).map((boardId: string) => (
-        <Square key={boardId} id={boardId} />
+        <Square key={boardId} {...boardData[boardId]} />
       ))
     }
   </div>
@@ -17,9 +17,11 @@ const Board = ({boardData}: BoardStateType) => (
 
 const Square = ({
   id,
+  occupied,
 }: string) => (
   <div className={`${styles.square} ${styles['square--' + id]}`}>
-    {id}
+    ({id})
+    {occupied}
   </div>
 );
 
