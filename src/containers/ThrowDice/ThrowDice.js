@@ -20,10 +20,12 @@ class ThrowDice extends Component<PropsType, StateType> {
   constructor(props: PropsType) {
     super(props);
   }
-  handleClick = () => {
+  handleThrow = () => {
     this.props.dice.throwing
       ? this.props.startRoll()
       : this.props.endRoll(this.rollDice());
+  }
+  handleEndTurn = () => {
     this.props.togglePlayers();
   }
   rollDie(): * {
@@ -38,12 +40,19 @@ class ThrowDice extends Component<PropsType, StateType> {
     return (
       <div>
         <button onClick={
-          this.handleClick
+          this.handleThrow
         }>
           {
-            this.props.dice.throwing ? 'Throwing...' : 'Throw dice'
+            this.props.dice.throwing
+              ? 'Throwing...'
+              : 'Throw dice'
           }
         </button>
+        <button onClick={
+          this.handleEndTurn
+        }>
+          End turn
+        </ button>
       </div>
     );
   }

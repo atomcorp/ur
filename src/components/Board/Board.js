@@ -21,6 +21,7 @@ const Square = ({
 }: string) => (
   <div className={`${styles.square} ${styles['square--' + id]}`}>
     ({id})
+    <br />
     {occupied}
   </div>
 );
