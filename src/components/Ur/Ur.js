@@ -4,11 +4,13 @@ import {
   RenderDice,
   ThrowDice,
   RenderBoard,
+  RenderThrows,
 } from '../../containers';
 
 const Ur = () => (
   <div className="ur">
     <PlayerStatus />
+    <RenderThrows />
     <RenderBoard />
     <RenderDice />
     <ThrowDice />
