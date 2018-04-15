@@ -15,9 +15,13 @@ const pieces = (
   switch (action.type) {
     case MOVE_PIECE:
       return Object.assign({}, state, {
-        [action.playerId]: {
-          [action.pieceId]: action.squareId,
-        },
+        [action.playerId]: Object.assign(
+          {},
+          state[action.playerId],
+          {
+            [action.pieceId]: action.squareId,
+          }
+        ),
       });
     default:
       return state;

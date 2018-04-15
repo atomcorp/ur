@@ -6,6 +6,7 @@ import {
   RenderBoard,
   RenderThrows,
   PiecePen,
+  MovePiece,
 } from '../../containers';
 
 const Ur = () => (
@@ -16,6 +17,7 @@ const Ur = () => (
     <PiecePen />
     <RenderDice />
     <ThrowDice />
+    <MovePiece />
   </div>
 );
 

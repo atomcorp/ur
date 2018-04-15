@@ -4,6 +4,7 @@ import PlayerStatus from './PlayerStatus/PlayerStatus';
 import RenderBoard from './RenderBoard/RenderBoard';
 import RenderThrows from './RenderThrows/RenderThrows';
 import PiecePen from './PiecePen/PiecePen';
+import MovePiece from './MovePiece/MovePiece';
 
 export {
   RenderDice,
@@ -12,4 +13,5 @@ export {
   RenderBoard,
   RenderThrows,
   PiecePen,
+  MovePiece,
 };

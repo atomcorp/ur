@@ -1,7 +1,7 @@
 // @flow
 import {ACTION_TYPES} from '../actions';
 // Dice
-export type DiceStateFacesType = $ReadOnlyArray<0 | 1>
+export type DiceStateFacesType = Array<0 | 1>
 
 export type DiceStateType = {
   +faces: DiceStateFacesType,

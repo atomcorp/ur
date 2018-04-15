@@ -3,6 +3,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {StoreType} from '../../redux/store.types';
 import type {PiecePenType} from './PiecePen.type';
+import type {PlayerIdType} from '../../redux/reducers/reducers.types';
 
 const PiecePen = ({
   pieces,
@@ -16,11 +17,17 @@ const PiecePen = ({
   </div>
 );
 
+type PenType = {
+  player: PlayerIdType,
+  pen: string,
+  playerData: string,
+}
+
 const Pen = ({
   player,
   pen,
   playerData,
-}) => (
+}: PenType) => (
   <div>
     {playerData[player].name}
     <br />
