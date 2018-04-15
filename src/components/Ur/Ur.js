@@ -5,6 +5,7 @@ import {
   ThrowDice,
   RenderBoard,
   RenderThrows,
+  PiecePen,
 } from '../../containers';
 
 const Ur = () => (
@@ -12,6 +13,7 @@ const Ur = () => (
     <PlayerStatus />
     <RenderThrows />
     <RenderBoard />
+    <PiecePen />
     <RenderDice />
     <ThrowDice />
   </div>

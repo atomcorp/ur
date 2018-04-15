@@ -1,0 +1,931 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cons",
+				"console"
+			],
+			[
+				"player",
+				"player1"
+			],
+			[
+				"top",
+				"topScore"
+			],
+			[
+				"table",
+				"Table"
+			],
+			[
+				"spac",
+				"space-between"
+			],
+			[
+				"flex",
+				"flex-direction"
+			],
+			[
+				"column",
+				"column-reverse"
+			],
+			[
+				"hover",
+				"hovering"
+			],
+			[
+				"travel",
+				"traveled"
+			],
+			[
+				"animation",
+				"animation-delay"
+			],
+			[
+				"compon",
+				"Component"
+			],
+			[
+				"pro",
+				"promise\t.promise()"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"paragr",
+				"paragraphs"
+			],
+			[
+				"project",
+				"project--page"
+			],
+			[
+				"marign",
+				"margin"
+			],
+			[
+				"translate",
+				"translateX()"
+			],
+			[
+				"Hero",
+				"HeroDetailComponent"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"menu",
+				"menuOpen"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"has",
+				"hasSubmittedPredictions"
+			],
+			[
+				"Game",
+				"GameType"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"Player",
+				"PlayerInfo"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"ilin",
+				"inline-block"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"gamewe",
+				"gameweek"
+			],
+			[
+				"Fx",
+				"FixturesType"
+			],
+			[
+				"ret",
+				"returnedRequest"
+			],
+			[
+				"Pred",
+				"PredictionsType"
+			],
+			[
+				"Fixture",
+				"FixturesType"
+			],
+			[
+				"Porps",
+				"Props"
+			],
+			[
+				"away",
+				"awayTeamName"
+			],
+			[
+				"sort",
+				"sortPoints"
+			],
+			[
+				"gameWee",
+				"gameweeksToCheck"
+			],
+			[
+				"new",
+				"newPredictions"
+			],
+			[
+				"gam",
+				"gameData"
+			],
+			[
+				"game",
+				"gameweekInView"
+			],
+			[
+				"can",
+				"canPredict"
+			],
+			[
+				"load",
+				"loadFixtureList"
+			],
+			[
+				"home",
+				"homeScore"
+			],
+			[
+				"gameweek",
+				"gameweek1"
+			],
+			[
+				"resu",
+				"results"
+			],
+			[
+				"Pos",
+				"PostsNew"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"Spa",
+				"SparklinesLine"
+			],
+			[
+				"data",
+				"newData"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"add",
+				"addClass\t.addClass()"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"backgorun",
+				"background-color"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"a",
+				"anim-\tanimation: ${1:name} ${2:duration} ${3:timing-function} ${4:delay} ${5:iteration-count} ${6:direction} ${7:fill-mode};"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/containers/PiecePen/PiecePen.js",
+			"settings":
+			{
+				"buffer_size": 452,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/containers/PlayerStatus/PlayerStatus.js",
+			"settings":
+			{
+				"buffer_size": 405,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nSublimeLinter\n-------------\n\n  \n    ____        _     _ _                _     _       _\n   / ___| _   _| |__ | (_)_ __ ___   ___| |   (_)_ __ | |_ ___ _ __\n   \\___ \\| | | | '_ \\| | | '_ ` _ \\ / _ \\ |   | | '_ \\| __/ _ \\ '__|\n    ___) | |_| | |_) | | | | | | | |  __/ |___| | | | | ||  __/ |\n   |____/ \\__,_|_.__/|_|_|_| |_| |_|\\___|_____|_|_| |_|\\__\\___|_|\n  \n  \n  Welcome to SublimeLinter, a linter framework for Sublime Text 3.\n  Linters are not included, they must be installed separately.\n  \n  \n  For complete documentation on how to use and configure SublimeLinter,\n  please see: http://www.sublimelinter.com\n  \n  To report issues: https://github.com/SublimeLinter/SublimeLinter\n",
+			"settings":
+			{
+				"buffer_size": 736,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 276.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"mareial",
+				"Material Theme: Activate theme"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"pref",
+				"Preferences: Settings"
+			],
+			[
+				"bab",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"babl",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"bable",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"them",
+				"Material Theme: Activate theme"
+			],
+			[
+				"js ",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"js",
+				"Set Syntax: JSON"
+			],
+			[
+				"brows",
+				"Preferences: Browse Packages"
+			],
+			[
+				"task",
+				"Set Syntax: Tasks"
+			],
+			[
+				"plain",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"todo",
+				"Set Syntax: Todo"
+			],
+			[
+				"babel",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"babe",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"bebl",
+				"Babel Transform"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"scs",
+				"Set Syntax: SCSS"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"mat",
+				"Material Theme: Configuration"
+			],
+			[
+				"prv",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"ba",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"tasks",
+				"Set Syntax: Tasks"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"bble",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"b",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"copy",
+				"File: Copy Path"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"forma",
+				"CodeFormatter: Format Code"
+			]
+		],
+		"width": 480.0
+	},
+	"console":
+	{
+		"height": 162.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/atom/sites/ur",
+		"/C/Users/atom/sites/ur/src",
+		"/C/Users/atom/sites/ur/src/containers",
+		"/C/Users/atom/sites/ur/src/containers/PiecePen",
+		"/C/Users/atom/sites/ur/src/containers/PlayerStatus"
+	],
+	"file_history":
+	[
+		"/C/Users/atom/sites/high-low/src/types.js",
+		"/C/Users/atom/sites/high-low/notes.todo",
+		"/C/Users/atom/sites/earthly-things/node_modules/caniuse-lite/data/regions/CD.js",
+		"/C/Users/atom/sites/earthly-things/public/manifest.json",
+		"/C/Users/atom/sites/high-low/src/components/cards/cards.jsx",
+		"/C/Users/atom/sites/high-low/src/components/page/page.jsx",
+		"/C/Users/atom/sites/high-low/src/reducers/reducers-index.js",
+		"/C/Users/atom/sites/high-low/src/actions/actions-index.js",
+		"/C/Users/atom/sites/high-low/src/action-types.jsx",
+		"/C/Users/atom/sites/high-low/src/action-creators.jsx",
+		"/C/Users/atom/sites/high-low/src/reducers.jsx",
+		"/C/Users/atom/sites/high-low/src/components/table/table.jsx",
+		"/C/Users/atom/sites/high-low/src/containers/game/game.jsx",
+		"/C/Users/atom/sites/high-low/src/components/rules/rules.jsx",
+		"/C/Users/atom/sites/high-low/src/App.js",
+		"/C/Users/atom/sites/high-low/src/components/cards.jsx",
+		"/C/Users/atom/sites/high-low/src/containers/page/page.jsx",
+		"/C/Users/atom/sites/high-low/src/components/card/card.jsx",
+		"/C/Users/atom/sites/high-low/src/components/game-logic.jsx",
+		"/C/Users/atom/sites/high-low/README.md",
+		"/C/Users/atom/sites/high-low/.gitignore",
+		"/C/Users/atom/sites/high-low/high-low.sublime-project",
+		"/C/Users/atom/AppData/Roaming/Sublime Text 3/Packages/PlainTasks/tasks-material-default.hidden-tmTheme",
+		"/C/Users/atom/AppData/Roaming/Sublime Text 3/Packages/Material Theme/Material-Theme.sublime-theme",
+		"/C/Users/atom/sites/whist/whist.todo",
+		"/C/Users/atom/sites/portfolio-react/src/containers/projects/projects.jsx",
+		"/C/Users/atom/sites/portfolio-react/src/containers/routes/routes.jsx",
+		"/C/Users/atom/sites/portfolio-react/src/containers/page/page.jsx",
+		"/C/Users/atom/sites/portfolio-react/notes.todo",
+		"/C/Users/atom/sites/portfolio-react/src/components/footer/footer.module.scss",
+		"/C/Users/atom/sites/portfolio-react/src/components/footer/footer.jsx",
+		"/C/Users/atom/sites/portfolio-react/src/components/skills/skills.jsx",
+		"/C/Users/atom/sites/portfolio-react/src/components/experience/experience.jsx",
+		"/C/Users/atom/sites/portfolio-react/src/components/project/project.jsx",
+		"/C/Users/atom/sites/portfolio-react/src/components/header/header.module.scss",
+		"/C/Users/atom/sites/portfolio-react/src/_mixins.scss",
+		"/C/Users/atom/sites/portfolio-react/src/containers/home/home.jsx",
+		"/C/Users/atom/sites/portfolio-react/src/components/header/header.jsx",
+		"/C/Users/atom/sites/portfolio-react/src/components/project/project.module.scss",
+		"/C/Users/atom/sites/portfolio-react/src/components/navigation/navigation.jsx",
+		"/C/Users/atom/sites/portfolio-react/src/components/navigation/navigation.module.scss",
+		"/C/Users/atom/sites/portfolio-react/src/assets/svgs/point.svg",
+		"/C/Users/atom/sites/portfolio-react/src/assets/svgs/arrow-mod.svg",
+		"/C/Users/atom/sites/portfolio-react/src/content.js",
+		"/C/Users/atom/sites/portfolio-react/README.md",
+		"/C/Users/atom/sites/portfolio-react/src/components/contact/contact.jsx",
+		"/C/Users/atom/sites/portfolio-react/src/containers/introduction/introduction.module.scss",
+		"/C/Users/atom/sites/portfolio-react/src/App.js",
+		"/C/Users/atom/sites/portfolio-react/src/containers/introduction/introduction.jsx",
+		"/C/Users/atom/sites/portfolio-react/src/components/experience/experience.module.scss",
+		"/C/Users/atom/sites/portfolio-react/src/components/contact/contact.module.scss",
+		"/C/Users/atom/sites/portfolio-react/src/components/skills/skills.module.scss",
+		"/C/Users/atom/sites/portfolio-react/src/containers/projects/projects.module.scss",
+		"/C/Users/atom/sites/portfolio-react/src/assets/svgs/arrow.svg",
+		"/C/Users/atom/sites/portfolio-react/src/containers/page/home.jsx",
+		"/C/Users/atom/sites/portfolio-react/src/assets/clip-masks/arrow.svg",
+		"/C/Users/atom/sites/portfolio-react/src/index.css",
+		"/C/Users/atom/sites/portfolio-react/src/components/blob/blob.jsx",
+		"/C/Users/atom/sites/portfolio-react/src/components/blob/blob.module.scss",
+		"/C/Users/atom/sites/portfolio-react/src/assets/clip-masks/blob-1.svg",
+		"/C/Users/atom/sites/portfolio-react/src/components/project--page/project--page.jsx",
+		"/C/Users/atom/sites/portfolio-react/src/components/project/project.module.css",
+		"/C/Users/atom/sites/portfolio-react/src/component/project/project.jsx",
+		"/C/Users/atom/sites/portfolio-react/src/component/project/project.scss",
+		"/C/Users/atom/sites/portfolio-react/src/containers/project/project.jsx",
+		"/C/Users/atom/sites/portfolio-react/src/containers/introduction/introduction.module.css",
+		"/C/Users/atom/AppData/Local/Temp/flow/flowlib_f46dbc8/react.js",
+		"/C/Users/atom/sites/portfolio-react/package.json",
+		"/C/Users/atom/sites/portfolio-react/.gitignore",
+		"/C/Users/atom/sites/portfolio-react/src/styles/index.module.css",
+		"/C/Users/atom/sites/portfolio-react/public/index.html",
+		"/C/Users/atom/sites/portfolio-react/src/styles/Button.module.css",
+		"/C/Users/atom/sites/test/ng-app/src/app/dashboard/dashboard.component.html",
+		"/C/Users/atom/sites/test/ng-app/src/app/hero.service.ts",
+		"/C/Users/atom/sites/test/ng-app/src/app/hero-detail/hero-detail.component.html",
+		"/C/Users/atom/sites/test/ng-app/src/app/hero-detail/hero-detail.component.ts",
+		"/C/Users/atom/sites/test/ng-app/src/app/app-routing.module.ts",
+		"/C/Users/atom/sites/test/ng-app/src/app/heroes/heroes.component.ts",
+		"/C/Users/atom/sites/test/ng-app/src/app/heroes/heroes.component.html",
+		"/C/Users/atom/sites/test/ng-app/src/app/app.module.ts",
+		"/C/Users/atom/sites/test/ng-app/src/app/app.component.html",
+		"/C/Users/atom/sites/test/ng-app/src/app/dashboard/dashboard.component.ts",
+		"/C/Users/atom/sites/test/ng-app/src/app/dashboard/dashboard.component.css",
+		"/C/Users/atom/sites/test/ng-app/src/app/messages/messages.component.html",
+		"/C/Users/atom/sites/test/ng-app/src/app/message.service.ts",
+		"/C/Users/atom/sites/test/ng-app/src/app/messages/messages.component.ts",
+		"/C/Users/atom/sites/test/ng-app/src/app/messages/messages.component.css",
+		"/C/Users/atom/sites/test/ng-app/src/app/mock-heroes.ts",
+		"/C/Users/atom/sites/test/ng-app/src/app/heroes/heroes.component.css",
+		"/C/Users/atom/sites/test/ng-app/src/app/hero.ts",
+		"/C/Users/atom/sites/test/ng-app/src/app/app.component.css",
+		"/C/Users/atom/sites/test/ng-app/src/app/app.component.ts",
+		"/C/Users/atom/sites/port/source/json/data.json",
+		"/C/Users/atom/sites/test/test-react-pp/src/containers/fixture.jsx",
+		"/C/Users/atom/sites/test/test-react-pp/src/xhr-requests/set-fixtures.js",
+		"/C/Users/atom/sites/test/test-react-pp/src/App.jsx",
+		"/C/Users/atom/sites/test/test-react-pp/note.todo",
+		"/C/Users/atom/sites/test/test-react-pp/src/containers/header.jsx",
+		"/C/Users/atom/sites/test/test-react-pp/src/components/leagues.jsx",
+		"/C/Users/atom/sites/test/test-react-pp/src/styles/_fixture.scss",
+		"/C/Users/atom/sites/test/test-react-pp/src/styles/base/_form.scss",
+		"/C/Users/atom/sites/test/test-react-pp/src/containers/sign-up.jsx",
+		"/C/Users/atom/sites/test/test-react-pp/src/styles/_fixtures.scss",
+		"/C/Users/atom/sites/test/test-react-pp/src/containers/sign-in.jsx",
+		"/C/Users/atom/sites/test/test-react-pp/src/styles/_index.scss",
+		"/C/Users/atom/sites/test/test-react-pp/src/styles/_header.scss",
+		"/C/Users/atom/sites/test/test-react-pp/src/styles/_leagues.scss",
+		"/C/Users/atom/sites/test/test-react-pp/src/styles/base/_table.scss",
+		"/C/Users/atom/sites/test/test-react-pp/src/styles/_table.scss",
+		"/C/Users/atom/sites/test/test-react-pp/src/layouts/authorised-layout.jsx",
+		"/C/Users/atom/sites/test/test-react-pp/src/containers/game.jsx",
+		"/C/Users/atom/sites/test/test-react-pp/src/layouts/unauthorised-layout.jsx",
+		"/C/Users/atom/sites/test/test-react-pp/src/components/header.jsx",
+		"/C/Users/atom/sites/test/test-react-pp/src/containers/predictions.jsx",
+		"/C/Users/atom/sites/test/test-react-pp/src/styles/base/_variables.scss",
+		"/C/Users/atom/sites/test/test-react-pp/src/styles/_stats.scss",
+		"/C/Users/atom/sites/test/test-react-pp/src/styles/_gameweek.scss",
+		"/C/Users/atom/sites/test/test-react-pp/src/components/stats.jsx",
+		"/C/Users/atom/sites/test/test-react-pp/src/styles/base/_defaults.scss",
+		"/C/Users/atom/sites/test/test-react-pp/src/styles/_player.scss",
+		"/C/Users/atom/sites/test/test-react-pp/src/styles/_game.scss",
+		"/C/Users/atom/sites/test/test-react-pp/src/components/player-info.jsx",
+		"/C/Users/atom/sites/test/test-react-pp/public/index.html",
+		"/C/Users/atom/sites/test/test-react-pp/src/containers/log-out.jsx",
+		"/C/Users/atom/sites/test/test-react-pp/src/styles/base/_normalize-plus.scss",
+		"/C/Users/atom/sites/test/test-react-pp/src/styles/mixins/_mixins.scss",
+		"/C/Users/atom/sites/test/test-react-pp/src/styles/mixins/_variables.scss",
+		"/C/Users/atom/sites/test/test-react-pp/src/styles/_variables.scss"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 167.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"test",
+			"togglePlayer('player2')",
+			"suit",
+			"combineReducers",
+			"export",
+			"sliceDeck",
+			"REMOVE_CARDS",
+			"CardDeck",
+			"cardVals",
+			",",
+			"returnCard",
+			"returnFace",
+			"returnSuits",
+			"dealCards",
+			"shuffleCards",
+			"round",
+			"CardDecktype",
+			"CardType",
+			"CardDeckType",
+			"CardType",
+			"array",
+			"Number",
+			"returnDeckCode",
+			"bold",
+			"Bold",
+			"bold",
+			"Bold",
+			"bold",
+			"38, 50, 56",
+			"128, 203, 196, 0"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "C:\\Users\\atom\\sites\\ur"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/containers/PiecePen/PiecePen.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 452,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								196,
+								196
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/containers/PlayerStatus/PlayerStatus.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 405,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								99,
+								99
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 736,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								736,
+								736
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 75.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 198.0
+	},
+	"output.exec":
+	{
+		"height": 128.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 198.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"note",
+				"notes.todo"
+			],
+			[
+				"con",
+				"src\\content.js"
+			],
+			[
+				"conten",
+				"src\\content.js"
+			],
+			[
+				"conte",
+				"src\\content.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"po",
+				"C:\\Users\\atom\\sites\\port\\port.sublime-project"
+			],
+			[
+				"reac",
+				"C:\\Users\\atom\\sites\\portfolio-react\\portfolio-react.sublime-project"
+			],
+			[
+				"",
+				"C:\\Users\\atom\\sites\\tutorials\\ReduxSimpleStarter3\\src\\reducers\\test-pp.sublime-project"
+			],
+			[
+				"red",
+				"C:\\Users\\atom\\sites\\ReduxSimpleStarter\\ReduxSimpleStarter.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 350.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
