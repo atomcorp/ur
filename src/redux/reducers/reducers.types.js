@@ -21,7 +21,7 @@ export type DiceActionType = {
 
 // Board
 export type SquareOwnerType = 'playerA' | 'playerB' | 'battle'
-export type OccupiedType = 'playerA' | 'playerB' | 'empty'
+export type ContentsType = 'playerA' | 'playerB' | 'empty'
 
 export type BoardActionType = {
   from: string,
@@ -33,14 +33,14 @@ export type BoardActionType = {
 export type UpdateBoardType = {
   type: ACTION_TYPES.UPDATE_BOARD,
   squareId: string,
-  occupied: OccupiedType,
+  contents: ContentsType,
 }
 
 export type BoardActionsType = UpdateBoardType
 
 export type BoardStateItemsType = {
   squareOwner: SquareOwnerType,
-  occupied: OccupiedType,
+  contents: ContentsType,
   isRosette: true | false,
   trackNumber: number,
   id: string,

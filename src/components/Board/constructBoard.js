@@ -49,7 +49,7 @@ const determineAndReturnSquare = (index: number) => {
     [key]: {
       squareOwner,
       isRosette,
-      occupied: 'empty',
+      contents: 'nothing',
       trackNumber,
       id: key,
     },

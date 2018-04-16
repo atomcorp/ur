@@ -20,12 +20,12 @@ const Board = ({boardData}: BoardStateType) => (
 
 const Square = ({
   id,
-  occupied,
+  contents,
 }: string) => (
   <div className={`${styles.square} ${styles['square--' + id]}`}>
     ({id})
     <br />
-    {occupied}
+    {contents}
   </div>
 );
 

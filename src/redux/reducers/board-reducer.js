@@ -11,14 +11,14 @@ const initialboard = constructboard();
 
 const applyPieceHelper = (
   isFromOrTo,
-  occupier,
+  pieceOrNothing,
   state,
 ) => ({
     [isFromOrTo]: Object.assign(
     {},
     state[isFromOrTo],
     {
-      occupied: occupier,
+      contents: pieceOrNothing,
     }
   ),
 });
@@ -32,8 +32,8 @@ const board = (
       return Object.assign(
         {},
         state,
-        applyPieceHelper(action.from, 'empty', state),
-        applyPieceHelper(action.to, action.playerId, state),
+        applyPieceHelper(action.from, 'nothing', state),
+        applyPieceHelper(action.to, action.pieceId, state),
     );
     default:
       return state;

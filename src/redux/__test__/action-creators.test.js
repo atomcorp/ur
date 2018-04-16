@@ -17,7 +17,7 @@ test('Can throw dice', () => {
 
 test('Can send updates to the board', () => {
   expect(
-    ACTION_CREATORS.updateBoard({squareId: 'a1', occupied: 'player1'})
+    ACTION_CREATORS.updateBoard({squareId: 'a1', contents: 'player1'})
   ).toEqual({
     type: ACTION_TYPES.UPDATE_BOARD,
     squareId: 'a1',

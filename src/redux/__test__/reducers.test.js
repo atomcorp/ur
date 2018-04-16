@@ -42,10 +42,10 @@ test('Board reducer works', () => {
   expect(board(state, {
     type: ACTION_TYPES.UPDATE_BOARD,
     squareId: 'a1',
-    occupied: 'player2',
+    contents: 'player2',
   })).toEqual(Object.assign({}, state, {
     ['a1']: {
-      occupied: 'player2',
+      contents: 'player2',
     },
   }));
 });

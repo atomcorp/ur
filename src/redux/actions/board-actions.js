@@ -6,14 +6,14 @@ import type {BoardActionType} from '../reducers/reducers.types';
 export const updateBoard = ({ 
   from,
   to,
-  piece,
+  pieceId,
   playerId,
 }: BoardActionType
 ) => ({
   type: ACTION_TYPES.UPDATE_BOARD,
   from,
   to,
-  piece,
+  pieceId,
   playerId,
 });
 
