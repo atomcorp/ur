@@ -8,7 +8,9 @@
     ". s9 ."
     ". s10 ."
     "a14 s11 b14"
-    "a13 s12 b13";
+    "a13 s12 b13"
+    "startA . startB"
+    "endA . endB";
 }
 
 .square {
@@ -44,4 +46,20 @@
   .square--s#{$i} { 
     grid-area: s#{$i};
   }
+}
+
+.square--startA { 
+  grid-area: startA;
+}
+
+.square--startB { 
+  grid-area: startB;
+}
+
+.square--endA { 
+  grid-area: endA;
+}
+
+.square--endB { 
+  grid-area: endB;
 }

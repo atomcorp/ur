@@ -1,11 +1,42 @@
 // @flow
 import type {BoardStateType} from '../../redux/reducers/reducers.types';
 
+const startAndEndSquares = {
+  startA: {
+    squareOwner: 'playerA',
+    isRosette: false,
+    contents: 'nothing',
+    trackNumber: 0,
+    id: 'startA',
+  },
+  endA: {
+    squareOwner: 'playerA',
+    isRosette: false,
+    contents: 'nothing',
+    trackNumber: 15,
+    id: 'endA',
+  },
+  startB: {
+    squareOwner: 'playerB',
+    isRosette: false,
+    contents: 'nothing',
+    trackNumber: 0,
+    id: 'startB',
+  },
+  endB: {
+    squareOwner: 'playerB',
+    isRosette: false,
+    contents: 'nothing',
+    trackNumber: 15,
+    id: 'endB',
+  },
+};
+
 const constructBoard = () => {
   return Array.from(Array(20)).fill(1).reduce(
     (acc: BoardStateType, val: 1, index: number) => {
       return Object.assign({}, acc, determineAndReturnSquare(index));
-    }, {}
+    }, startAndEndSquares
   );
 };
 

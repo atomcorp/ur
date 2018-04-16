@@ -1,2 +1,7 @@
+
+Todo:
+  Should make board squares an array,
+  so I can use board to hold start and end
+
 Ideas:
   Add keyboard shortcuts (space = roll dice / move piece, ctrl = scroll pieces)

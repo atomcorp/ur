@@ -3,7 +3,7 @@
 import {ACTION_TYPES} from './';
 import type {BoardActionType} from '../reducers/reducers.types';
 
-export const updateBoard = ({ 
+export const updateBoard = ({
   from,
   to,
   pieceId,
