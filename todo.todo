@@ -1,7 +1,8 @@
 
 Todo:
-  Should make board squares an array,
-  so I can use board to hold start and end
+  ✔ Should make board squares an array, so I can use board to hold start and end @done(18-04-17 00:00)  
+  ☐ how to populate board from the start?
+  ☐ need to rethink pieces redux
 
 Ideas:
   Add keyboard shortcuts (space = roll dice / move piece, ctrl = scroll pieces)
