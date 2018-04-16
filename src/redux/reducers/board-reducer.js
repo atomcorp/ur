@@ -20,9 +20,11 @@ const addOrRemovePiece = (
     state[isFromOrTo],
     {
       contents: addOrRemove === 'add'
-        ? [...pieceId]
-        : state[isFromOrTo].filter(
-          (currentContent) => currentContent !== pieceId
+        ? [...state[isFromOrTo].contents, pieceId]
+        : state[isFromOrTo].contents.filter(
+          (currentContent) => {
+            return currentContent !== pieceId;
+          }
         ),
     }
   ),

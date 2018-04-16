@@ -16,7 +16,7 @@ const constructPlayerPiecesSet = (playerId: string) => {
     (acc: PiecesStateType, val: 1, index: number) => {
     return Object.assign({}, acc, {
       [playerId]: Object.assign({}, acc[playerId], {
-        ['piece' + (index + 1)]: 'start',
+        ['piece' + (index + 1)]: `${playerId}-0`,
       }),
     });
   }, {[playerId]: {}});

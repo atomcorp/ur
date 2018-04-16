@@ -62,9 +62,9 @@ class MovePiece extends Component<PropsType, {}> {
 
 const helpCalculateSquareId = (playerId, number) => {
   if (number < 5 || number > 12) {
-    return playerId === 'playerA' ? `a${number}` : `b${number}`;
+    return `${playerId}-${number}`;
   }
-  return `s${number}`;
+  return `battle-${number}`;
 };
 
 const mapStateToProps = (state: StoreType) => ({
