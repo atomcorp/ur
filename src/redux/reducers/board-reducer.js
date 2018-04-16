@@ -7,18 +7,23 @@ import type {
   BoardActionsType,
 } from './reducers.types';
 
-const initialboard = constructboard();
+const initialboard = constructboard;
 
-const applyPieceHelper = (
+const addOrRemovePiece = (
   isFromOrTo,
-  pieceOrNothing,
+  pieceId,
   state,
+  addOrRemove
 ) => ({
     [isFromOrTo]: Object.assign(
     {},
     state[isFromOrTo],
     {
-      contents: pieceOrNothing,
+      contents: addOrRemove === 'add'
+        ? [...pieceId]
+        : state[isFromOrTo].filter(
+          (currentContent) => currentContent !== pieceId
+        ),
     }
   ),
 });
@@ -32,8 +37,8 @@ const board = (
       return Object.assign(
         {},
         state,
-        applyPieceHelper(action.from, 'nothing', state),
-        applyPieceHelper(action.to, action.pieceId, state),
+        addOrRemovePiece(action.from, action.pieceId, state, 'remove'),
+        addOrRemovePiece(action.to, action.pieceId, state, 'add'),
     );
     default:
       return state;

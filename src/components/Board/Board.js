@@ -25,7 +25,7 @@ const Square = ({
   <div className={`${styles.square} ${styles['square--' + id]}`}>
     ({id})
     <br />
-    {contents}
+    {contents.map((content) => content)}
   </div>
 );
 
