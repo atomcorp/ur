@@ -1,6 +1,6 @@
 // @flow
 import constructPieces from '../../components/Pieces/constructPieces';
-import {MOVE_PIECE} from '../actions/actions-types';
+import {ACTION_TYPES} from '../actions';
 import type {
   PiecesStateType,
   PiecesActionType,
@@ -13,7 +13,7 @@ const pieces = (
   action: PiecesActionType
 ) => {
   switch (action.type) {
-    case MOVE_PIECE:
+    case ACTION_TYPES.UPDATE_PIECE:
       return Object.assign({}, state, {
         [action.playerId]: Object.assign(
           {},

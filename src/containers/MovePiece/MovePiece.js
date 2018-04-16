@@ -9,12 +9,24 @@ class MovePiece extends Component<PropsType, {}> {
     super(props);
   }
   handleClick = () => {
+    // need proper
+    // move piece from a1 -> a3
+    // to update the board properly
+    // Would it make more sense if the pieces said
+    // where they were, rather than the board
     if (this.props.dice.total > 0) {
-      this.props.movePiece({
+      const square = this.calculateMove();
+      this.props.updatePiece({
         pieceId: 'piece1',
-        squareId: this.calculateMove(),
+        squareId: square,
         playerId: this.props.turn.playersTurn,
       });
+      this.props.movePieces([{
+        pieceId: 'piece1',
+        from: this.props.pieces[this.props.turn.playersTurn].piece1,
+        to: square,
+        playerId: this.props.turn.playersTurn,
+      }]);
     }
   }
   calculateMove = () => {
@@ -64,8 +76,11 @@ const mapStateToProps = (state: StoreType) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  movePiece: (params) => {
-    dispatch(ACTION_CREATORS.movePiece(params));
+  movePieces: (params) => {
+    dispatch(ACTION_CREATORS.movePiecesFromTo(params));
+  },
+  updatePiece: (params) => {
+    dispatch(ACTION_CREATORS.updatePiece(params));
   },
 });
 

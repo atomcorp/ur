@@ -3,7 +3,7 @@ import {
   throwDiceEnd,
 } from './dice-actions';
 import {
-  updateBoard,
+  movePiecesFromTo,
 } from './board-actions';
 import {
   togglePlayersTurn,
@@ -11,15 +11,15 @@ import {
   playerHasTokenReset,
 } from './player-actions';
 import {
-  movePiece,
+  updatePiece,
 } from './pieces-actions';
 
 export {
   throwDiceStart,
   throwDiceEnd,
-  updateBoard,
+  movePiecesFromTo,
   togglePlayersTurn,
   playerGetsTokenHome,
   playerHasTokenReset,
-  movePiece,
+  updatePiece,
 };

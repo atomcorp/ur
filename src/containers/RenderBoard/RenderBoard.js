@@ -9,7 +9,7 @@ import type {
   StoreType,
 } from '../../redux/store.types';
 
-const RenderBoard = ({board}: BoardStateType) => (
+const RenderBoard = ({board, pieces}: BoardStateType) => (
   <Board boardData={board} />
 );
 

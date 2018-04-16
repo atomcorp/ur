@@ -24,8 +24,10 @@ export type SquareOwnerType = 'playerA' | 'playerB' | 'battle'
 export type OccupiedType = 'playerA' | 'playerB' | 'empty'
 
 export type BoardActionType = {
-  squareId: string,
-  occupied: OccupiedType,
+  from: string,
+  to: string,
+  piece: string,
+  playerId: string,
 }
 
 export type UpdateBoardType = {
