@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
 import styles from './Board.module.scss';
+import {Piece} from '../';
 import type {
   BoardStateType,
 } from '../../redux/reducers/reducers.types';
@@ -25,11 +26,15 @@ const Square = ({
   <div className={`${styles.square} ${styles['square--' + id]}`}>
     ({id})
     <br />
-    {contents.map((content, i) => (
-      <div key={i}>
-        {content}
-      </div>
-    ))}
+    {
+      contents.map((content, i) => (
+        <Piece
+          key={i}
+          pieceId={content}
+          playerId={'tbc'}
+         />
+      ))
+    }
   </div>
 );
 

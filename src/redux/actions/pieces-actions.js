@@ -1,11 +1,20 @@
 // @flow
-import {UPDATE_PIECE} from './actions-types';
+import {ACTIONS_TYPES} from './actions-types';
 import type {MovePiecesType} from '../reducers/reducers.types';
 
 const updatePiece = ({pieceId, squareId, playerId}: MovePiecesType) => ({
-  type: UPDATE_PIECE,
+  type: ACTIONS_TYPES.UPDATE_PIECE,
+  pieceId,
+  playerId,
+});
+
+export const clickedPiece = ({
   pieceId,
   squareId,
+  playerId,
+}) => ({
+  type: ACTIONS_TYPES.CLICKED_PIECE,
+  pieceId,
   playerId,
 });
 
