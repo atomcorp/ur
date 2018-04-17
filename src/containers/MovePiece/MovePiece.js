@@ -18,13 +18,14 @@ class MovePiece extends Component<PropsType, {}> {
     if (this.props.dice.total > 0) {
       const square = this.calculateMove();
       this.props.updatePiece({
-        pieceId: 'piece1',
+        pieceId: `${this.props.turn.playersTurn}-piece--1`,
         squareId: square,
-        playerId: this.props.turn.playersTurn,
       });
       this.props.movePieces([{
-        pieceId: 'piece1',
-        from: this.props.pieces[this.props.turn.playersTurn].piece1,
+        pieceId: `${this.props.turn.playersTurn}-piece--1`,
+        from: this.props.pieces[
+          `${this.props.turn.playersTurn}-piece--1`
+        ].squareId,
         to: square,
         playerId: this.props.turn.playersTurn,
       }]);
@@ -32,7 +33,7 @@ class MovePiece extends Component<PropsType, {}> {
   }
   calculateMove = () => {
     const pieceCurrentLocation =
-      this.props.pieces[this.props.turn.playersTurn].piece1;
+      this.props.pieces[`${this.props.turn.playersTurn}-piece--1`].squareId;
     if (pieceCurrentLocation === 'start') {
       return helpCalculateSquareId(
         this.props.turn.playersTurn,

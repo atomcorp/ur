@@ -12,7 +12,7 @@ import {
   playerHasTokenReset,
 } from './player-actions';
 import {
-  addRemovePieces,
+  updatePiece,
 } from './pieces-actions';
 
 export {
@@ -23,5 +23,5 @@ export {
   togglePlayersTurn,
   playerGetsTokenHome,
   playerHasTokenReset,
-  addRemovePieces,
+  updatePiece,
 };

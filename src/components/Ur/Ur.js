@@ -1,3 +1,6 @@
+/**
+ * This should contain all the UI
+ */
 import React from 'react';
 import {
   PlayerStatus,

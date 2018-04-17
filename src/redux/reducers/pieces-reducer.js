@@ -14,14 +14,13 @@ const pieces = (
 ) => {
   switch (action.type) {
     case ACTION_TYPES.UPDATE_PIECE:
-      return Object.assign({}, state, {
-        [action.playerId]: Object.assign(
-          {},
-          state[action.playerId],
-          {
-            [action.pieceId]: action.squareId,
-          }
-        ),
+      return Object.assign(
+        {},
+        state,
+        {
+        [action.pieceId]: {
+          squareId: action.squareId,
+        },
       });
     default:
       return state;
