@@ -263,8 +263,16 @@
 			"file": "src/containers/PiecePen/PiecePen.js",
 			"settings":
 			{
-				"buffer_size": 860,
+				"buffer_size": 1021,
 				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/containers/MovePiece/MovePiece.js",
+			"settings":
+			{
+				"buffer_size": 2406,
 				"line_ending": "Windows"
 			}
 		},
@@ -272,7 +280,7 @@
 			"file": "src/containers/index.js",
 			"settings":
 			{
-				"buffer_size": 405,
+				"buffer_size": 465,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -281,7 +289,7 @@
 			"file": "src/components/Ur/Ur.js",
 			"settings":
 			{
-				"buffer_size": 340,
+				"buffer_size": 371,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -498,10 +506,13 @@
 		"/C/Users/atom/sites/ur",
 		"/C/Users/atom/sites/ur/src",
 		"/C/Users/atom/sites/ur/src/components",
+		"/C/Users/atom/sites/ur/src/components/Board",
 		"/C/Users/atom/sites/ur/src/components/Ur",
 		"/C/Users/atom/sites/ur/src/containers",
+		"/C/Users/atom/sites/ur/src/containers/MovePiece",
 		"/C/Users/atom/sites/ur/src/containers/PiecePen",
 		"/C/Users/atom/sites/ur/src/containers/PlayerStatus",
+		"/C/Users/atom/sites/ur/src/containers/RenderBoard",
 		"/C/Users/atom/sites/ur/src/redux",
 		"/C/Users/atom/sites/ur/src/redux/reducers"
 	],
@@ -706,7 +717,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -715,44 +726,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 860,
+						"buffer_size": 1021,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								597,
-								597
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": false,
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 261.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/containers/index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 405,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								269,
-								277
+								618,
+								618
 							]
 						],
 						"settings":
@@ -768,20 +750,80 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "src/components/Ur/Ur.js",
-					"semi_transient": false,
+					"buffer": 1,
+					"file": "src/containers/MovePiece/MovePiece.js",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 340,
+						"buffer_size": 2406,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								121,
-								121
+								1277,
+								1277
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 609.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/containers/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 465,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/components/Ur/Ur.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 371,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -795,7 +837,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]

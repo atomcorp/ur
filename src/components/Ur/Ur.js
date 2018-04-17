@@ -5,7 +5,6 @@ import {
   ThrowDice,
   RenderBoard,
   RenderThrows,
-  PiecePen,
   MovePiece,
 } from '../../containers';
 
@@ -14,7 +13,6 @@ const Ur = () => (
     <PlayerStatus />
     <RenderThrows />
     <RenderBoard />
-    <PiecePen />
     <RenderDice />
     <ThrowDice />
     <MovePiece />
