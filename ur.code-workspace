@@ -7,7 +7,6 @@
   "settings": {
     "files.exclude": {
       "**/node_modules": true,
-    },
-    "flow.useNPMPackagedFlow": true
+    }
   },
 }

@@ -3,18 +3,23 @@
 import {ACTION_TYPES} from './';
 import type {BoardActionType} from '../reducers/reducers.types';
 
-export const updateBoard = ({
+export const addRemovePieces = ({
   from,
   to,
   pieceId,
   playerId,
 }: BoardActionType
 ) => ({
-  type: ACTION_TYPES.UPDATE_BOARD,
+  type: ACTION_TYPES.ADD_REMOVE_PIECES,
   from,
   to,
   pieceId,
   playerId,
+});
+
+export const addAllPieces = (pieces) => ({
+  type: ACTION_TYPES.ADD_ALL_PIECES,
+  pieces,
 });
 
 type MovesType = [
@@ -24,7 +29,7 @@ type MovesType = [
 export const movePiecesFromTo = (moves: Array<MovesType>) => {
   return (dispatch) => {
     moves.forEach((move) => {
-      dispatch(updateBoard(move));
+      dispatch(addRemovePieces(move));
     });
   };
 };

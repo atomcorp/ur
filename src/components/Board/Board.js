@@ -25,7 +25,11 @@ const Square = ({
   <div className={`${styles.square} ${styles['square--' + id]}`}>
     ({id})
     <br />
-    {contents.map((content) => content)}
+    {contents.map((content, i) => (
+      <div key={i}>
+        {content}
+      </div>
+    ))}
   </div>
 );
 

@@ -11,15 +11,18 @@ const constructPieces = () => {
   }, {});
 };
 
+
 const constructPlayerPiecesSet = (playerId: string) => {
   return Array.from(Array(7)).fill(1).reduce(
     (acc: PiecesStateType, val: 1, index: number) => {
     return Object.assign({}, acc, {
-      [playerId]: Object.assign({}, acc[playerId], {
-        ['piece' + (index + 1)]: `${playerId}-0`,
-      }),
+      [`${playerId}-piece--${index + 1}`]: {
+        squareId: `${playerId}-0`,
+        player: playerId,
+        id: `${playerId}-piece--${index + 1}`,
+      },
     });
-  }, {[playerId]: {}});
+  }, {});
 };
 
 export default constructPieces;

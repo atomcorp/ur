@@ -4,6 +4,7 @@ import {
 } from './dice-actions';
 import {
   movePiecesFromTo,
+  addAllPieces,
 } from './board-actions';
 import {
   togglePlayersTurn,
@@ -11,15 +12,16 @@ import {
   playerHasTokenReset,
 } from './player-actions';
 import {
-  updatePiece,
+  addRemovePieces,
 } from './pieces-actions';
 
 export {
   throwDiceStart,
   throwDiceEnd,
   movePiecesFromTo,
+  addAllPieces,
   togglePlayersTurn,
   playerGetsTokenHome,
   playerHasTokenReset,
-  updatePiece,
+  addRemovePieces,
 };

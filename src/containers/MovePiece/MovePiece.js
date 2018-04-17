@@ -7,6 +7,7 @@ import type {PropsType} from './MovePieces.type';
 class MovePiece extends Component<PropsType, {}> {
   constructor(props: PropsType) {
     super(props);
+    this.props.addAllPieces(this.props.pieces);
   }
   handleClick = () => {
     // need proper
@@ -81,6 +82,9 @@ const mapDispatchToProps = (dispatch) => ({
   },
   updatePiece: (params) => {
     dispatch(ACTION_CREATORS.updatePiece(params));
+  },
+  addAllPieces: (pieces) => {
+    dispatch(ACTION_CREATORS.addAllPieces(pieces));
   },
 });
 
