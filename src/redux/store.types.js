@@ -3,7 +3,7 @@ import type {
   DiceStateType,
   BoardStateType,
   GameStateType,
-  PiecesStateType,
+  CountersStateType,
   PlayersStateType,
   TurnStateType,
 } from './reducers/reducers.types';
@@ -13,7 +13,7 @@ export type StoreType = {
   +board: BoardStateType,
   +dice: DiceStateType,
   +game: GameStateType,
-  +pieces: PiecesStateType,
+  +counters: CountersStateType,
   +players: PlayersStateType,
   +turn: TurnStateType,
 }

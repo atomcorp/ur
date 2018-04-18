@@ -3,8 +3,8 @@ import ThrowDice from './ThrowDice/ThrowDice';
 import PlayerStatus from './PlayerStatus/PlayerStatus';
 import RenderBoard from './RenderBoard/RenderBoard';
 import RenderThrows from './RenderThrows/RenderThrows';
-import MovePiece from './MovePiece/MovePiece';
-import Piece from './Piece/Piece';
+import MoveCounter from './MoveCounter/MoveCounter';
+import Counter from './Counter/Counter';
 
 export {
   RenderDice,
@@ -12,6 +12,6 @@ export {
   PlayerStatus,
   RenderBoard,
   RenderThrows,
-  MovePiece,
-  Piece,
+  MoveCounter,
+  Counter,
 };

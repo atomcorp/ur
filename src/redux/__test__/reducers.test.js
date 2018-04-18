@@ -3,11 +3,11 @@ import board from '../reducers/board-reducer';
 import players, {
   initialPlayerState,
 } from '../reducers/players-reducer';
-import pieces from '../reducers/pieces-reducer';
+import counters from '../reducers/counters-reducer';
 
 import {ACTION_TYPES} from '../actions';
 import constructBoard from '../../components/Board/constructBoard';
-import constructPieces from '../../components/Pieces/constructPieces';
+import constructCounters from '../../components/Counters/constructCounters';
 
 
 test('Dice reducer works OK', () => {
@@ -76,17 +76,17 @@ test('Players reducer works', () => {
   }));
 });
 
-test('Pieces reducer works OK', () => {
-  const state = constructPieces();
-  expect(pieces(undefined, {})).toEqual(state);
-  expect(pieces(state, {
+test('Counters reducer works OK', () => {
+  const state = constructCounters();
+  expect(counters(undefined, {})).toEqual(state);
+  expect(counters(state, {
     type: ACTION_TYPES.MOVE_PIECE,
-    pieceId: 'piece2',
+    counterId: 'counter2',
     squareId: 's9',
     playerId: 'playerA',
   })).toEqual(Object.assign({}, state, {
     ['playerA']: {
-      ['piece2']: 's9',
+      ['counter2']: 's9',
     },
   }));
 });

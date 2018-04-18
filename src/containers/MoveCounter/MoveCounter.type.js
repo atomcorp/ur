@@ -1,7 +1,7 @@
 import type {
   DiceStateType,
   PlayersStateType,
-  PiecesStateType,
+  CountersStateType,
   TurnStateType,
   BoardStateType,
 } from './reducers/reducers.types';
@@ -11,6 +11,6 @@ export type PropsType = {
   dice: DiceStateType,
   turn: TurnStateType,
   players: PlayersStateType,
-  pieces: PiecesStateType,
+  counters: CountersStateType,
   board: BoardStateType,
 }

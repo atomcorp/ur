@@ -8,7 +8,7 @@ import {
   ThrowDice,
   RenderBoard,
   RenderThrows,
-  MovePiece,
+  MoveCounter,
 } from '../../containers';
 
 const Ur = () => (
@@ -18,7 +18,7 @@ const Ur = () => (
     <RenderBoard />
     <RenderDice />
     <ThrowDice />
-    <MovePiece />
+    <MoveCounter />
   </div>
 );
 

@@ -26,7 +26,7 @@ export type ContentsType = 'playerA' | 'playerB' | 'empty'
 export type BoardActionType = {
   from: string,
   to: string,
-  piece: string,
+  counter: string,
   playerId: string,
 }
 
@@ -93,23 +93,23 @@ export type PlayersActionType = TogglePlayersTurnType
   | PlayerHasTokenResetType
   | PlayerGetsTokenHomeType
 
-// Pieces
-export type PiecesType = {
-  [pieceId: string]: string,
+// Counters
+export type CountersType = {
+  [counterId: string]: string,
 }
 
-export type PiecesStateType = {
-  [playerId: string]: PiecesType,
+export type CountersStateType = {
+  [playerId: string]: CountersType,
 }
 
-export type MovePiecesType = {
-  pieceId: string,
+export type MoveCountersType = {
+  counterId: string,
   squareId: string,
   playerId: string,
   type: 'MOVE_PIECE',
 }
 
-export type PiecesActionType = MovePiecesType
+export type CountersActionType = MoveCountersType
 
 export type GameStateType = {
   inProgress: boolean,

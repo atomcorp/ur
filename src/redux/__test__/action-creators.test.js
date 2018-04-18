@@ -39,14 +39,14 @@ test('Can send player updates', () => {
   });
 });
 
-test('Can send move piece updates', () => {
-  expect(ACTION_CREATORS.movePiece({
-    pieceId: 'piece2',
+test('Can send move counter updates', () => {
+  expect(ACTION_CREATORS.moveCounter({
+    counterId: 'counter2',
     squareId: 's9',
     playerId: 'playerA',
   })).toEqual({
     type: ACTION_TYPES.MOVE_PIECE,
-    pieceId: 'piece2',
+    counterId: 'counter2',
     squareId: 's9',
     playerId: 'playerA',
   });

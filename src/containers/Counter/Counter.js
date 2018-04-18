@@ -2,20 +2,20 @@ import React from 'react';
 import {connect} from 'react-redux';
 import type {StoreType} from '../../redux/store.types';
 
-const Piece = ({
-  pieceId,
+const Counter = ({
+  counterId,
   playerId,
 }) => {
-  const handleClick = (pieceId) => {
-    return () => console.log(pieceId);
+  const handleClick = (counterId) => {
+    return () => console.log(counterId);
   };
   return (
     <div
       onClick={
-        handleClick(pieceId)
+        handleClick(counterId)
       }
     >
-      {pieceId}
+      {counterId}
       <br />
       {playerId}
     </div>
@@ -33,4 +33,4 @@ const mapDispatchToProps = (dispatch) => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Piece);
+)(Counter);

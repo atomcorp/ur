@@ -1,16 +1,16 @@
 // @flow
-import constructPieces from '../../methods/constructPieces';
+import constructCounters from '../../methods/constructCounters';
 import {ACTION_TYPES} from '../actions';
 import type {
-  PiecesStateType,
-  PiecesActionType,
+  CountersStateType,
+  CountersActionType,
 } from './reducers.types';
 
-const initalState = constructPieces();
+const initalState = constructCounters();
 
-const pieces = (
-  state: PiecesStateType = initalState,
-  action: PiecesActionType
+const counters = (
+  state: CountersStateType = initalState,
+  action: CountersActionType
 ) => {
   switch (action.type) {
     case ACTION_TYPES.UPDATE_PIECE:
@@ -18,9 +18,9 @@ const pieces = (
         {},
         state,
         {
-        [action.pieceId]: Object.assign(
+        [action.counterId]: Object.assign(
           {},
-          state[action.pieceId],
+          state[action.counterId],
           {
             squareId: action.squareId,
           }
@@ -31,4 +31,4 @@ const pieces = (
   }
 };
 
-export default pieces;
+export default counters;

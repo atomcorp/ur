@@ -3,8 +3,8 @@ import {
   throwDiceEnd,
 } from './dice-actions';
 import {
-  movePiecesFromTo,
-  addAllPieces,
+  moveCountersFromTo,
+  addAllCounters,
 } from './board-actions';
 import {
   togglePlayersTurn,
@@ -12,16 +12,16 @@ import {
   playerHasTokenReset,
 } from './player-actions';
 import {
-  updatePiece,
-} from './pieces-actions';
+  updateCounter,
+} from './counters-actions';
 
 export {
   throwDiceStart,
   throwDiceEnd,
-  movePiecesFromTo,
-  addAllPieces,
+  moveCountersFromTo,
+  addAllCounters,
   togglePlayersTurn,
   playerGetsTokenHome,
   playerHasTokenReset,
-  updatePiece,
+  updateCounter,
 };

@@ -9,9 +9,9 @@ import type {
 
 const initialboard = constructboard;
 
-const addOrRemovePiece = (
+const addOrRemoveCounter = (
   isFromOrTo,
-  piece,
+  counter,
   state,
   addOrRemove
 ) => ({
@@ -20,11 +20,11 @@ const addOrRemovePiece = (
     state[isFromOrTo],
     {
       contents: addOrRemove === 'add'
-        ? [...state[isFromOrTo].contents, piece]
+        ? [...state[isFromOrTo].contents, counter]
         : state[isFromOrTo].contents.filter(
-          (contentsPiece) => {
-            if (contentsPiece.id !== piece.id) {
-              return contentsPiece;
+          (contentsCounter) => {
+            if (contentsCounter.id !== counter.id) {
+              return contentsCounter;
             }
           }
         ),
@@ -32,19 +32,19 @@ const addOrRemovePiece = (
   ),
 });
 
-const addAllPieces = (state, pieces) => {
-  return Object.keys(pieces).reduce(
-    (acc, pieceKey) => {
-      const piece = pieces[pieceKey];
+const addAllCounters = (state, counters) => {
+  return Object.keys(counters).reduce(
+    (acc, counterKey) => {
+      const counter = counters[counterKey];
       return Object.assign(
         {},
         acc,
         {
-          [piece.squareId]: Object.assign(
+          [counter.squareId]: Object.assign(
             {},
-            acc[piece.squareId],
+            acc[counter.squareId],
             {
-              contents: [...acc[piece.squareId].contents, piece],
+              contents: [...acc[counter.squareId].contents, counter],
             }
           ),
         }
@@ -62,14 +62,14 @@ const board = (
       return Object.assign(
         {},
         state,
-        addOrRemovePiece(action.from, action.piece, state, 'remove'),
-        addOrRemovePiece(action.to, action.piece, state, 'add'),
+        addOrRemoveCounter(action.from, action.counter, state, 'remove'),
+        addOrRemoveCounter(action.to, action.counter, state, 'add'),
     );
     case ACTION_TYPES.ADD_ALL_PIECES:
       return Object.assign(
         {},
         state,
-        addAllPieces(state, action.pieces)
+        addAllCounters(state, action.counters)
       );
     default:
       return state;
