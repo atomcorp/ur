@@ -1,6 +1,6 @@
 // @flow
 
-import constructboard from '../../components/Board/constructBoard';
+import constructboard from '../../methods/constructBoard';
 import {ACTION_TYPES} from '../actions/index';
 import type {
   BoardStateType,

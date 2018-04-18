@@ -1,6 +1,8 @@
 /**
  * This will contain all the game logic
  *
+ * This will receive props and send the result to redux
+ *
  * - Check if you can click piece
  * - Move a piece when clicked on
  * - Handle when a piece lands on another piece

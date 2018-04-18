@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import styles from './Board.module.scss';
-import {Piece} from '../';
+import {Piece} from '../../containers';
 import type {
   BoardStateType,
 } from '../../redux/reducers/reducers.types';

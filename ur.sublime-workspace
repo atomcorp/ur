@@ -260,19 +260,10 @@
 	"buffers":
 	[
 		{
-			"file": "src/containers/PiecePen/PiecePen.js",
-			"settings":
-			{
-				"buffer_size": 1021,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "src/containers/MovePiece/MovePiece.js",
 			"settings":
 			{
-				"buffer_size": 2406,
+				"buffer_size": 2612,
 				"line_ending": "Windows"
 			}
 		},
@@ -280,7 +271,7 @@
 			"file": "src/containers/index.js",
 			"settings":
 			{
-				"buffer_size": 465,
+				"buffer_size": 409,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -289,7 +280,7 @@
 			"file": "src/components/Ur/Ur.js",
 			"settings":
 			{
-				"buffer_size": 371,
+				"buffer_size": 384,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -510,7 +501,6 @@
 		"/C/Users/atom/sites/ur/src/components/Ur",
 		"/C/Users/atom/sites/ur/src/containers",
 		"/C/Users/atom/sites/ur/src/containers/MovePiece",
-		"/C/Users/atom/sites/ur/src/containers/PiecePen",
 		"/C/Users/atom/sites/ur/src/containers/PlayerStatus",
 		"/C/Users/atom/sites/ur/src/containers/RenderBoard",
 		"/C/Users/atom/sites/ur/src/redux",
@@ -518,6 +508,7 @@
 	],
 	"file_history":
 	[
+		"/C/Users/atom/sites/ur/src/containers/PiecePen/PiecePen.js",
 		"/C/Users/atom/sites/high-low/src/types.js",
 		"/C/Users/atom/sites/high-low/notes.todo",
 		"/C/Users/atom/sites/earthly-things/node_modules/caniuse-lite/data/regions/CD.js",
@@ -644,8 +635,7 @@
 		"/C/Users/atom/sites/test/test-react-pp/src/containers/log-out.jsx",
 		"/C/Users/atom/sites/test/test-react-pp/src/styles/base/_normalize-plus.scss",
 		"/C/Users/atom/sites/test/test-react-pp/src/styles/mixins/_mixins.scss",
-		"/C/Users/atom/sites/test/test-react-pp/src/styles/mixins/_variables.scss",
-		"/C/Users/atom/sites/test/test-react-pp/src/styles/_variables.scss"
+		"/C/Users/atom/sites/test/test-react-pp/src/styles/mixins/_variables.scss"
 	],
 	"find":
 	{
@@ -717,53 +707,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/containers/PiecePen/PiecePen.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1021,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								618,
-								618
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": false,
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "src/containers/MovePiece/MovePiece.js",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 2406,
+						"buffer_size": 2612,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1277,
-								1277
+								1032,
+								1032
 							]
 						],
 						"settings":
@@ -781,12 +742,12 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "src/containers/index.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 465,
+						"buffer_size": 409,
 						"regions":
 						{
 						},
@@ -806,16 +767,16 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "src/components/Ur/Ur.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 371,
+						"buffer_size": 384,
 						"regions":
 						{
 						},
@@ -837,7 +798,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
