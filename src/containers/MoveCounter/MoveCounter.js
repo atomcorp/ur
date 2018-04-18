@@ -15,7 +15,7 @@ class MoveCounter extends Component<PropsType, {}> {
     // to update the board properly
     // Would it make more sense if the counters said
     // where they were, rather than the board
-    if (this.props.dice.total > 0) {
+    if (this.props.dice.moves > 0) {
       const square = this.calculateMove();
       this.props.updateCounter({
         counterId: `${this.props.turn.playersTurn}-counter--1`,
@@ -39,11 +39,11 @@ class MoveCounter extends Component<PropsType, {}> {
     if (counterCurrentLocation === 'start') {
       return helpCalculateSquareId(
         this.props.turn.playersTurn,
-        this.props.dice.total
+        this.props.dice.moves
       );
     } else {
       const newTrackCount = this.props.board[counterCurrentLocation].trackNumber
-        + this.props.dice.total;
+        + this.props.dice.moves;
       return helpCalculateSquareId(
         this.props.turn.playersTurn,
         newTrackCount
@@ -54,7 +54,7 @@ class MoveCounter extends Component<PropsType, {}> {
     return (
       <div>
         {this.props.players[this.props.turn.playersTurn].name}
-        &nbsp;has {this.props.dice.total} moves
+        &nbsp;has {this.props.dice.moves} moves
         <br />
         <button onClick={this.handleClick}>
           Move counter
@@ -81,7 +81,7 @@ const mapStateToProps = (state: StoreType) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   moveCounters: (params) => {
-    dispatch(ACTION_CREATORS.moveCountersFromTo(params));
+    dispatch(ACTION_CREATORS.moveArrayOfCountersFromTo(params));
   },
   updateCounter: (params) => {
     dispatch(ACTION_CREATORS.updateCounter(params));

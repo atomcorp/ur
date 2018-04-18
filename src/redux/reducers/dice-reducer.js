@@ -7,7 +7,7 @@ import {ACTION_TYPES} from '../actions';
 
 const defaultDiceState = {
   faces: [0, 0, 0, 0],
-  total: 0,
+  moves: 0,
   throwing: false,
 };
 
@@ -19,7 +19,7 @@ const dice = (
     case ACTION_TYPES.THROW_DICE_END:
       return Object.assign({}, state, {
         faces: [...action.faces],
-        total: action.faces.reduce(
+        moves: action.faces.reduce(
           (acc: number, val: number) => acc + val,
           0
         ),

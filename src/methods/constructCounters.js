@@ -18,7 +18,7 @@ const constructPlayerCountersSet = (playerId: string) => {
     return Object.assign({}, acc, {
       [`${playerId}-counter--${index + 1}`]: {
         squareId: `${playerId}-0`,
-        player: playerId,
+        playerId: playerId,
         id: `${playerId}-counter--${index + 1}`,
       },
     });

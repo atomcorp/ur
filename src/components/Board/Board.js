@@ -30,7 +30,7 @@ const Square = ({
       contents.map((counter, i) => (
         <Counter
           key={i}
-          piece={counter}
+          counter={counter}
         />
       ))
     }

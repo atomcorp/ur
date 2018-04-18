@@ -3,7 +3,7 @@ import {
   throwDiceEnd,
 } from './dice-actions';
 import {
-  moveCountersFromTo,
+  moveArrayOfCountersFromTo,
   addAllCounters,
 } from './board-actions';
 import {
@@ -13,15 +13,17 @@ import {
 } from './player-actions';
 import {
   updateCounter,
+  clickedOnCounter,
 } from './counter-actions';
 
 export {
   throwDiceStart,
   throwDiceEnd,
-  moveCountersFromTo,
+  moveArrayOfCountersFromTo,
   addAllCounters,
   togglePlayersTurn,
   playerGetsTokenHome,
   playerHasTokenReset,
   updateCounter,
+  clickedOnCounter,
 };

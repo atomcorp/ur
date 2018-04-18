@@ -26,7 +26,7 @@ type MovesType = [
   BoardActionType
 ];
 
-export const moveCountersFromTo = (moves: Array<MovesType>) => {
+export const moveArrayOfCountersFromTo = (moves: Array<MovesType>) => {
   return (dispatch) => {
     moves.forEach((move) => {
       dispatch(addRemoveCounters(move));
