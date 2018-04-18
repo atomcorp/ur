@@ -4,7 +4,7 @@ import board from './board-reducer';
 import players from './players-reducer';
 import game from './game-reducer';
 import turn from './turn-reducer';
-import counters from './counters-reducer';
+import counters from './counter-reducer';
 
 export default combineReducers({
   dice,

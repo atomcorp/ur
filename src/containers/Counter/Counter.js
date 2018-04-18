@@ -7,7 +7,7 @@ const Counter = ({
   piece,
 }: CountersStateType) => {
   const handleClick = (counterId) => {
-
+    
   };
   return (
     <div

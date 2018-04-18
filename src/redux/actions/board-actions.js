@@ -10,7 +10,7 @@ export const addRemoveCounters = ({
   playerId,
 }: BoardActionType
 ) => ({
-  type: ACTION_TYPES.ADD_REMOVE_PIECES,
+  type: ACTION_TYPES.ADD_REMOVE_COUNTERS,
   from,
   to,
   counter,
@@ -18,7 +18,7 @@ export const addRemoveCounters = ({
 });
 
 export const addAllCounters = (counters) => ({
-  type: ACTION_TYPES.ADD_ALL_PIECES,
+  type: ACTION_TYPES.ADD_ALL_COUNTERS,
   counters,
 });
 

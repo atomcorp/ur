@@ -45,7 +45,7 @@ test('Can send move counter updates', () => {
     squareId: 's9',
     playerId: 'playerA',
   })).toEqual({
-    type: ACTION_TYPES.MOVE_PIECE,
+    type: ACTION_TYPES.MOVE_COUNTER,
     counterId: 'counter2',
     squareId: 's9',
     playerId: 'playerA',

@@ -13,7 +13,7 @@ import {
 } from './player-actions';
 import {
   updateCounter,
-} from './counters-actions';
+} from './counter-actions';
 
 export {
   throwDiceStart,

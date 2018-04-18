@@ -13,7 +13,7 @@ const counters = (
   action: CountersActionType
 ) => {
   switch (action.type) {
-    case ACTION_TYPES.UPDATE_PIECE:
+    case ACTION_TYPES.UPDATE_COUNTER:
       return Object.assign(
         {},
         state,

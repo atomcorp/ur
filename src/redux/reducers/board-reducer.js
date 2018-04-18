@@ -58,14 +58,14 @@ const board = (
   action: BoardActionsType
 ) => {
   switch (action.type) {
-    case ACTION_TYPES.ADD_REMOVE_PIECES:
+    case ACTION_TYPES.ADD_REMOVE_COUNTERS:
       return Object.assign(
         {},
         state,
         addOrRemoveCounter(action.from, action.counter, state, 'remove'),
         addOrRemoveCounter(action.to, action.counter, state, 'add'),
     );
-    case ACTION_TYPES.ADD_ALL_PIECES:
+    case ACTION_TYPES.ADD_ALL_COUNTERS:
       return Object.assign(
         {},
         state,

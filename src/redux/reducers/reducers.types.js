@@ -108,7 +108,7 @@ export type MoveCountersType = {
   counterId: string,
   squareId: string,
   playerId: string,
-  type: 'MOVE_PIECE',
+  type: 'MOVE_COUNTER',
 }
 
 export type CountersActionType = MoveCountersType

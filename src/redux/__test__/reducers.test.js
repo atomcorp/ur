@@ -80,7 +80,7 @@ test('Counters reducer works OK', () => {
   const state = constructCounters();
   expect(counters(undefined, {})).toEqual(state);
   expect(counters(state, {
-    type: ACTION_TYPES.MOVE_PIECE,
+    type: ACTION_TYPES.MOVE_COUNTER,
     counterId: 'counter2',
     squareId: 's9',
     playerId: 'playerA',
