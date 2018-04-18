@@ -22,7 +22,7 @@ class MovePiece extends Component<PropsType, {}> {
         squareId: square,
       });
       this.props.movePieces([{
-        pieceId: `${this.props.turn.playersTurn}-piece--1`,
+        piece: this.props.pieces[`${this.props.turn.playersTurn}-piece--1`],
         from: this.props.pieces[
           `${this.props.turn.playersTurn}-piece--1`
         ].squareId,

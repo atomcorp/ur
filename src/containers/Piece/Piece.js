@@ -1,4 +1,6 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import type {StoreType} from '../../redux/store.types';
 
 const Piece = ({
   pieceId,
@@ -20,4 +22,15 @@ const Piece = ({
   );
 };
 
-export default Piece;
+const mapStateToProps = (store: StoreType) => ({
+
+});
+
+const mapDispatchToProps = (dispatch) => ({
+
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Piece);

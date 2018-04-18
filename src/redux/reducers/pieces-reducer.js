@@ -18,9 +18,13 @@ const pieces = (
         {},
         state,
         {
-        [action.pieceId]: {
-          squareId: action.squareId,
-        },
+        [action.pieceId]: Object.assign(
+          {},
+          state[action.pieceId],
+          {
+            squareId: action.squareId,
+          }
+        ),
       });
     default:
       return state;

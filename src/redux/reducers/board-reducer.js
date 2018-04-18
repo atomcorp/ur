@@ -11,7 +11,7 @@ const initialboard = constructboard;
 
 const addOrRemovePiece = (
   isFromOrTo,
-  pieceId,
+  piece,
   state,
   addOrRemove
 ) => ({
@@ -20,10 +20,12 @@ const addOrRemovePiece = (
     state[isFromOrTo],
     {
       contents: addOrRemove === 'add'
-        ? [...state[isFromOrTo].contents, pieceId]
+        ? [...state[isFromOrTo].contents, piece]
         : state[isFromOrTo].contents.filter(
-          (currentContent) => {
-            return currentContent !== pieceId;
+          (contentsPiece) => {
+            if (contentsPiece.id !== piece.id) {
+              return contentsPiece;
+            }
           }
         ),
     }
@@ -33,17 +35,16 @@ const addOrRemovePiece = (
 const addAllPieces = (state, pieces) => {
   return Object.keys(pieces).reduce(
     (acc, pieceKey) => {
-      const currentSquareId = pieces[pieceKey].squareId;
-      const pieceId = pieces[pieceKey].id;
+      const piece = pieces[pieceKey];
       return Object.assign(
         {},
         acc,
         {
-          [currentSquareId]: Object.assign(
+          [piece.squareId]: Object.assign(
             {},
-            acc[currentSquareId],
+            acc[piece.squareId],
             {
-              contents: [...acc[currentSquareId].contents, pieceId],
+              contents: [...acc[piece.squareId].contents, piece],
             }
           ),
         }
@@ -61,8 +62,8 @@ const board = (
       return Object.assign(
         {},
         state,
-        addOrRemovePiece(action.from, action.pieceId, state, 'remove'),
-        addOrRemovePiece(action.to, action.pieceId, state, 'add'),
+        addOrRemovePiece(action.from, action.piece, state, 'remove'),
+        addOrRemovePiece(action.to, action.piece, state, 'add'),
     );
     case ACTION_TYPES.ADD_ALL_PIECES:
       return Object.assign(

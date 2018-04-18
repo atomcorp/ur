@@ -27,12 +27,12 @@ const Square = ({
     ({id})
     <br />
     {
-      contents.map((content, i) => (
+      contents.map((piece, i) => (
         <Piece
           key={i}
-          pieceId={content}
-          playerId={'tbc'}
-         />
+          pieceId={piece.id}
+          playerId={piece.player}
+        />
       ))
     }
   </div>

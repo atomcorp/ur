@@ -6,14 +6,14 @@ import type {BoardActionType} from '../reducers/reducers.types';
 export const addRemovePieces = ({
   from,
   to,
-  pieceId,
+  piece,
   playerId,
 }: BoardActionType
 ) => ({
   type: ACTION_TYPES.ADD_REMOVE_PIECES,
   from,
   to,
-  pieceId,
+  piece,
   playerId,
 });
 
