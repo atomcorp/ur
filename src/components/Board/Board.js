@@ -30,8 +30,7 @@ const Square = ({
       contents.map((counter, i) => (
         <Counter
           key={i}
-          counterId={counter.id}
-          playerId={counter.player}
+          piece={counter}
         />
       ))
     }

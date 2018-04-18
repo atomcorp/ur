@@ -95,11 +95,13 @@ export type PlayersActionType = TogglePlayersTurnType
 
 // Counters
 export type CountersType = {
-  [counterId: string]: string,
+  counterId: string,
+  playerId: string,
+  squareId: string,
 }
 
 export type CountersStateType = {
-  [playerId: string]: CountersType,
+  [counterId: string]: CountersType,
 }
 
 export type MoveCountersType = {

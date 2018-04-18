@@ -22,7 +22,9 @@ class MoveCounter extends Component<PropsType, {}> {
         squareId: square,
       });
       this.props.moveCounters([{
-        counter: this.props.counters[`${this.props.turn.playersTurn}-counter--1`],
+        counter: this.props.counters[
+          `${this.props.turn.playersTurn}-counter--1`
+        ],
         from: this.props.counters[
           `${this.props.turn.playersTurn}-counter--1`
         ].squareId,

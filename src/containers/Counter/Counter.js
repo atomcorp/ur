@@ -1,23 +1,23 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import type {StoreType} from '../../redux/store.types';
+import type {CountersStateType} from '../../redux/reducers/reducers.types';
 
 const Counter = ({
-  counterId,
-  playerId,
-}) => {
+  piece,
+}: CountersStateType) => {
   const handleClick = (counterId) => {
-    return () => console.log(counterId);
+
   };
   return (
     <div
       onClick={
-        handleClick(counterId)
+        handleClick(piece.id)
       }
     >
-      {counterId}
+      {piece.id}
       <br />
-      {playerId}
+      {piece.player}
     </div>
   );
 };
