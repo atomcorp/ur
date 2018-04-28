@@ -19,7 +19,7 @@ import type {
 class ThrowDice extends Component<PropsType, StateType> {
   constructor(props: PropsType) {
     super(props);
-    this.debug = true;
+    this.debug = false;
     this.state = {
       diceCheat: 0,
       faceCheat: [0, 0, 0, 0],
@@ -63,11 +63,15 @@ class ThrowDice extends Component<PropsType, StateType> {
               : 'Throw dice'
           }
         </button>
-        <input
-          type="number"
-          value={this.state.diceCheat}
-          onChange={this.handleDiceDebug}
-        />
+        {
+          this.debug && (
+            <input
+              type="number"
+              value={this.state.diceCheat}
+              onChange={this.handleDiceDebug}
+            />
+          )
+        }
         <button onClick={
           this.handleEndTurn
         }>

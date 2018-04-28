@@ -48,7 +48,7 @@ export const clickedOnCounter = (counter) => {
       },
     ]));
     if (store.board[proposedSquareId].isRosette) {
-      dispatch(ACTION_CREATORS.haslandedOnRosette())
+      dispatch(ACTION_CREATORS.haslandedOnRosette());
       return;
     }
     dispatch(ACTION_CREATORS.togglePlayersTurn());

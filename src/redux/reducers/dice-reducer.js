@@ -28,6 +28,7 @@ const dice = (
       });
     case ACTION_TYPES.RESET_DICE:
     case ACTION_TYPES.TOGGLE_PLAYERS_TURN:
+    case ACTION_TYPES.LANDED_ON_ROSETTE:
       return Object.assign({}, state, {
         faces: [0, 0, 0, 0],
         throwing: false,
