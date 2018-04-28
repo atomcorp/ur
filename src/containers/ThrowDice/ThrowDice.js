@@ -19,14 +19,29 @@ import type {
 class ThrowDice extends Component<PropsType, StateType> {
   constructor(props: PropsType) {
     super(props);
+    this.debug = true;
+    this.state = {
+      diceCheat: 0,
+      faceCheat: [0, 0, 0, 0],
+    };
   }
   handleThrow = () => {
     if (!this.props.dice.throwing && this.props.turn.canRollDice) {
       this.props.startRoll();
       setTimeout(() => {
-        this.props.endRoll(this.rollDice());
-      }, 500);
+        this.props.endRoll(this.debug ? this.state.faceCheat : this.rollDice());
+      }, 0);
     }
+  }
+  handleEndTurn = () => {
+    this.props.togglePlayers();
+  }
+  handleDiceDebug = (event) => {
+    this.setState({
+      diceCheat: event.currentTarget.value,
+      faceCheat: Array(4).fill(0).map((v, i) =>
+        i < event.currentTarget.value ? 1 : 0),
+    });
   }
   rollDie(): * {
     return Math.round(Math.random());
@@ -48,6 +63,16 @@ class ThrowDice extends Component<PropsType, StateType> {
               : 'Throw dice'
           }
         </button>
+        <input
+          type="number"
+          value={this.state.diceCheat}
+          onChange={this.handleDiceDebug}
+        />
+        <button onClick={
+          this.handleEndTurn
+        }>
+          End turn
+        </ button>
       </div>
     );
   }
@@ -65,7 +90,9 @@ const mapDispatchToProps = (dispatch: DispatchType) => ({
   endRoll: (faces: DiceStateFacesType) => {
     dispatch(ACTION_CREATORS.handleOptionsAfterThrow(faces));
   },
-
+  togglePlayers: () => {
+    dispatch(ACTION_CREATORS.togglePlayersTurn());
+  },
 });
 
 export default connect(
