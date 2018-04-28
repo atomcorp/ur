@@ -20,6 +20,9 @@ import {
   showGameMessage,
   hideGameMessage,
 } from './game-actions';
+import {
+  haslandedOnRosette,
+} from './turn-actions';
 
 export {
   throwDiceStart,
@@ -34,4 +37,5 @@ export {
   showGameMessage,
   hideGameMessage,
   handleOptionsAfterThrow,
+  haslandedOnRosette,
 };

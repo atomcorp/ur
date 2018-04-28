@@ -1,8 +1,15 @@
 
 Todo:
   ✔ Should make board squares an array, so I can use board to hold start and end @done(18-04-17 00:00)  
-  ☐ how to populate board from the start?
-  ☐ need to rethink pieces redux
+  ✔ how to populate board from the start? @done(18-04-28 22:46)
+  ✘ need to rethink pieces redux @cancelled(18-04-28 22:46)
+  ☐ add rosette notifiers
+
+Refactor:
+  When the dice has been rolled we should update every counter with potential move
+  Then when we click on a counter, we are just realising that potential move
+  This may make logic easier, and more functional to control
+  We can just feed one counters data to one function for it to calc move result
 
 Ideas:
   Add keyboard shortcuts (space = roll dice / move piece, ctrl = scroll pieces)

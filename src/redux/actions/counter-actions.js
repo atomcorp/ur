@@ -44,9 +44,13 @@ export const clickedOnCounter = (counter) => {
         from: counter.squareId,
         to: proposedSquareId,
         playerId: counter.playerId,
-        counter: store.counters[counter.id],
+        counter,
       },
     ]));
+    if (store.board[proposedSquareId].isRosette) {
+      dispatch(ACTION_CREATORS.haslandedOnRosette())
+      return;
+    }
     dispatch(ACTION_CREATORS.togglePlayersTurn());
   };
 };
