@@ -141,3 +141,44 @@ export const canCounterBeClicked = (
   }
   return true;
 };
+
+export const canAttackOpponentCounter = (
+  counter,
+  dispatch,
+  store,
+  proposedSquareId,
+) => {
+  if (
+    isProposedSquareOccupied(counter, store, proposedSquareId) &&
+    store.board[proposedSquareId].contents.some(
+      (content) => content.playerId !== counter.playerId
+    )
+  ) {
+    const opponentsCounter = store.board[proposedSquareId].contents[0];
+    dispatch(ACTION_CREATORS.updateCounter({
+      counterId: opponentsCounter.id,
+      squareId: `${opponentsCounter.playerId}-0`,
+    }));
+    dispatch(ACTION_CREATORS.updateCounter({
+      counterId: counter.id,
+      squareId: proposedSquareId,
+    }));
+    dispatch(ACTION_CREATORS.moveArrayOfCountersFromTo([
+      {
+        from: counter.squareId,
+        to: proposedSquareId,
+        playerId: counter.playerId,
+        counter: counter,
+      },
+      {
+        from: opponentsCounter.squareId,
+        to: `${opponentsCounter.playerId}-0`,
+        playerId: opponentsCounter.playerId,
+        counter: opponentsCounter,
+      },
+    ]));
+    dispatch(ACTION_CREATORS.togglePlayersTurn());
+    return true;
+  }
+  return false;
+};

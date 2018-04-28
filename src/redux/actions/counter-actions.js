@@ -2,7 +2,10 @@
 import {ACTION_TYPES} from './index';
 import {ACTION_CREATORS} from './';
 import type {MoveCountersType} from '../reducers/reducers.types';
-import {canCounterBeClicked} from '../../methods/game';
+import {
+  canCounterBeClicked,
+  canAttackOpponentCounter,
+} from '../../methods/game';
 import {helpCalculateSquareId} from '../../methods/helpers';
 
 const updateCounter = ({counterId, squareId}: MoveCountersType) => ({
@@ -22,15 +25,14 @@ const clickedCounter = ({
 export const clickedOnCounter = (counter) => {
   return (dispatch, getState) => {
     const store = getState();
-    // clicked should either leave one of two ways
-    // depending on player can player click on counter
-    // first check player owns counter
-    // CAN USER
     const proposedSquareId = helpCalculateSquareId({
       playerId: counter.playerId,
       trackNumber: store.dice.moves + store.board[counter.squareId].trackNumber,
     });
     if (!canCounterBeClicked(counter, dispatch, store, proposedSquareId)) {
+      return;
+    }
+    if (canAttackOpponentCounter(counter, dispatch, store, proposedSquareId)) {
       return;
     }
     dispatch(ACTION_CREATORS.updateCounter({
@@ -42,7 +44,7 @@ export const clickedOnCounter = (counter) => {
         from: counter.squareId,
         to: proposedSquareId,
         playerId: counter.playerId,
-        counter,
+        counter: store.counters[counter.id],
       },
     ]));
     dispatch(ACTION_CREATORS.togglePlayersTurn());
