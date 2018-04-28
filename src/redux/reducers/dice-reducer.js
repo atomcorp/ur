@@ -19,10 +19,7 @@ const dice = (
     case ACTION_TYPES.THROW_DICE_END:
       return Object.assign({}, state, {
         faces: [...action.faces],
-        moves: action.faces.reduce(
-          (acc: number, val: number) => acc + val,
-          0
-        ),
+        moves: action.moves,
         throwing: false,
       });
     case ACTION_TYPES.THROW_DICE_START:
@@ -30,6 +27,7 @@ const dice = (
         throwing: true,
       });
     case ACTION_TYPES.RESET_DICE:
+    case ACTION_TYPES.TOGGLE_PLAYERS_TURN:
       return Object.assign({}, state, {
         faces: [0, 0, 0, 0],
         throwing: false,

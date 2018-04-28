@@ -32,11 +32,35 @@ const clickedCounter = ({
 //   return false;
 // };
 
-const isCounterOwners = ({
-  counterOwner,
-  playersTurn,
-}) => {
-  counterOwner === playersTurn ? true : false;
+const canCounterBeClicked = (counter, dispatch, store) => {
+  const hasPlayerClickedOpponentCounter
+    = counter.playerId !== store.turn.playersTurn;
+  const playerHasntRolledDice = store.turn.canRollDice;
+  const playersTurnhasEnded = store.turn.turnEnded;
+  // is counter players?
+  if (hasPlayerClickedOpponentCounter) {
+    dispatch(ACTION_CREATORS.showGameMessage({
+      message: 'That\'s not your counter!',
+    }));
+  }
+  if (playerHasntRolledDice) {
+    dispatch(ACTION_CREATORS.showGameMessage({
+      message: 'You need to roll the dice!',
+    }));
+  }
+  if (playersTurnhasEnded) {
+    dispatch(ACTION_CREATORS.showGameMessage({
+      message: 'Your turn has ended',
+    }));
+  }
+  if (
+    hasPlayerClickedOpponentCounter
+    || playerHasntRolledDice
+    || playersTurnhasEnded
+  ) {
+    return false;
+  }
+  return true;
 };
 
 // need to simplify the logic going in here
@@ -46,10 +70,10 @@ export const clickedOnCounter = (counter) => {
     // clicked should either leave one of two ways
     // depending on player can player click on counter
     // first check player owns counter
-    isCounterOwners({
-      counterOwner: counter.playerId,
-      playersTurn: store.turn.playersTurn,
-    });
+    // CAN USER
+    if (!canCounterBeClicked(counter, dispatch, store)) {
+      return;
+    }
     const proposedSquareId = helpCalculateSquareId({
       playerId: counter.playerId,
       trackNumber: store.dice.moves + store.board[counter.squareId].trackNumber,

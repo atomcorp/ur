@@ -1,5 +1,8 @@
 // @flow
-import {ACTION_TYPES} from './';
+import {
+  ACTION_TYPES,
+  ACTION_CREATORS,
+} from './';
 import type {FacesType} from './action-creators.types.js';
 
 const throwDiceStart = () => ({
@@ -7,13 +10,29 @@ const throwDiceStart = () => ({
   throwing: true,
 });
 
-const throwDiceEnd = (faces: FacesType) => ({
+const throwDiceEnd = (faces: FacesType, moves) => ({
   type: ACTION_TYPES.THROW_DICE_END,
-  faces,
   throwing: false,
+  faces,
+  moves,
 });
+
+const handleOptionsAfterThrow = (faces) => {
+  return (dispatch, store) => {
+    const moves = faces.reduce(
+      (acc: number, val: number) => acc + val,
+      0
+    );
+    dispatch(throwDiceEnd(faces, moves));
+    // if player throws a zero, swap sides
+    if (moves < 1) {
+      dispatch(ACTION_CREATORS.togglePlayersTurn());
+    }
+  };
+};
 
 export {
   throwDiceStart,
   throwDiceEnd,
+  handleOptionsAfterThrow,
 };

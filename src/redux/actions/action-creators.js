@@ -1,6 +1,7 @@
 import {
   throwDiceStart,
   throwDiceEnd,
+  handleOptionsAfterThrow,
 } from './dice-actions';
 import {
   moveArrayOfCountersFromTo,
@@ -32,4 +33,5 @@ export {
   clickedOnCounter,
   showGameMessage,
   hideGameMessage,
+  handleOptionsAfterThrow,
 };

@@ -21,9 +21,12 @@ class ThrowDice extends Component<PropsType, StateType> {
     super(props);
   }
   handleThrow = () => {
-    this.props.dice.throwing
-      ? this.props.startRoll()
-      : this.props.endRoll(this.rollDice());
+    if (!this.props.dice.throwing && this.props.turn.canRollDice) {
+      this.props.startRoll();
+      setTimeout(() => {
+        this.props.endRoll(this.rollDice());
+      }, 500);
+    }
   }
   rollDie(): * {
     return Math.round(Math.random());
@@ -52,6 +55,7 @@ class ThrowDice extends Component<PropsType, StateType> {
 
 const mapStateToProps = (store: StoreType) => ({
   dice: store.dice,
+  turn: store.turn,
 });
 
 const mapDispatchToProps = (dispatch: DispatchType) => ({
@@ -59,7 +63,7 @@ const mapDispatchToProps = (dispatch: DispatchType) => ({
     dispatch(ACTION_CREATORS.throwDiceStart());
   },
   endRoll: (faces: DiceStateFacesType) => {
-    dispatch(ACTION_CREATORS.throwDiceEnd(faces));
+    dispatch(ACTION_CREATORS.handleOptionsAfterThrow(faces));
   },
 
 });

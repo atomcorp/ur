@@ -6,7 +6,9 @@ const GameStatus = ({game}) => (
   <div>
     Game status: {game.inProgress ? 'Started' : 'Not started'}
     <br />
-    Messages: {game.messages}
+    Messages: {
+      game.message.map((message) => message).join(', ')
+    }
   </div>
 );
 
@@ -15,10 +17,7 @@ const mapStateToProps = (store) => ({
 });
 
 GameStatus.propTypes = {
-  game: {
-    inProgress: PropTypes.bool,
-    messages: PropTypes.string,
-  },
+  game: PropTypes.object,
 };
 
 export default connect(

@@ -8,7 +8,7 @@ import type {
 const initialState = {
   inProgress: false,
   showMessage: false,
-  message: '',
+  message: [],
 };
 
 const game = (
@@ -27,12 +27,13 @@ const game = (
     case ACTION_TYPES.SHOW_GAME_MESSAGE:
       return Object.assign({}, state, {
         showMessage: true,
-        message: action.message,
+        message: [...state.message, action.message],
       });
+    case ACTION_TYPES.TOGGLE_PLAYERS_TURN:
     case ACTION_TYPES.HIDE_GAME_MESSAGE:
       return Object.assign({}, state, {
         showMessage: false,
-        message: '',
+        message: [],
       });
     default:
       return state;
