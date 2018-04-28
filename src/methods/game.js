@@ -61,10 +61,10 @@ const isProposedSquareAnIllegalMove = (
     dispatch(ACTION_CREATORS.showGameMessage({
       message: 'That square doesn\'t exist! You need an exact roll.',
     }));
-    return true;
   }
 
   const isOccupiedWithOwnCounter =
+    !squareDoesntExist &&
     isProposedSquareOccupied(counter, store, proposedSquareId) &&
     isProposedSquareOccupiedWithOwnCounter(
       store.board[proposedSquareId].contents,
@@ -76,6 +76,7 @@ const isProposedSquareAnIllegalMove = (
     }));
   }
   const isOccupiedWithOtherPlayersCounterOnARosette =
+    !squareDoesntExist &&
     isProposedSquareOccupied(counter, store, proposedSquareId) &&
     isProposedSquareOccupiedWithOpponentOnRosette(
       store.board[proposedSquareId],
