@@ -13,7 +13,7 @@ const updateCounter = ({counterId, squareId}: MoveCountersType) => ({
 const clickedCounter = ({
   counter,
 }) => ({
-  type: ACTION_TYPES.CLICKED_ON_COUNTER,
+  type: ACTION_TYPES.CLICKED_ON_COUNTER_ATTEMPT,
   counter,
 });
 
@@ -32,10 +32,24 @@ const clickedCounter = ({
 //   return false;
 // };
 
+const isCounterOwners = ({
+  counterOwner,
+  playersTurn,
+}) => {
+  counterOwner === playersTurn ? true : false;
+};
+
 // need to simplify the logic going in here
 export const clickedOnCounter = (counter) => {
   return (dispatch, getState) => {
     const store = getState();
+    // clicked should either leave one of two ways
+    // depending on player can player click on counter
+    // first check player owns counter
+    isCounterOwners({
+      counterOwner: counter.playerId,
+      playersTurn: store.turn.playersTurn,
+    });
     const proposedSquareId = helpCalculateSquareId({
       playerId: counter.playerId,
       trackNumber: store.dice.moves + store.board[counter.squareId].trackNumber,

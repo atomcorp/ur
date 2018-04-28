@@ -13,7 +13,7 @@ const RenderThrows = ({moves}: number) => (
 );
 
 const mapStateToProps = (store: StoreType) => ({
-  moves: store.dice.total,
+  moves: store.dice.moves,
 });
 
 export default connect(

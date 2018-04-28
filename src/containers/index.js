@@ -5,6 +5,7 @@ import RenderBoard from './RenderBoard/RenderBoard';
 import RenderThrows from './RenderThrows/RenderThrows';
 import MoveCounter from './MoveCounter/MoveCounter';
 import Counter from './Counter/Counter';
+import GameStatus from './GameStatus/GameStatus';
 
 export {
   RenderDice,
@@ -14,4 +15,5 @@ export {
   RenderThrows,
   MoveCounter,
   Counter,
+  GameStatus,
 };

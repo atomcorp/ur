@@ -15,6 +15,10 @@ import {
   updateCounter,
   clickedOnCounter,
 } from './counter-actions';
+import {
+  showGameMessage,
+  hideGameMessage,
+} from './game-actions';
 
 export {
   throwDiceStart,
@@ -26,4 +30,6 @@ export {
   playerHasTokenReset,
   updateCounter,
   clickedOnCounter,
+  showGameMessage,
+  hideGameMessage,
 };
