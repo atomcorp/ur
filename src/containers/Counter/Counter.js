@@ -1,5 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import counterA from '../../assets/counter-a.png';
+import counterB from '../../assets/counter-b.png';
 import {ACTION_CREATORS} from '../../redux/actions/';
 import type {StoreType} from '../../redux/store.types';
 import type {CountersStateType} from '../../redux/reducers/reducers.types';
@@ -13,15 +15,18 @@ const Counter = ({
     moveCounter(counters[counter.id]);
   };
   return (
-    <div
+    <img
+      width="50"
+      height="50"
+      src={
+        counter.playerId === 'playerA'
+          ? counterA
+          : counterB
+      }
       onClick={
         () => handleClick(counter)
       }
-    >
-      {counter.id}
-      <br />
-      {counter.playerId}
-    </div>
+    />
   );
 };
 

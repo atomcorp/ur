@@ -1,5 +1,7 @@
 .board {
   display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: minmax(50px, auto);
   grid-template-areas:
     "playerA-4  battle-5  playerB-4"
     "playerA-3  battle-6  playerB-3"
