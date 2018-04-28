@@ -32,6 +32,7 @@ const clickedCounter = ({
 //   return false;
 // };
 
+// need to simplify the logic going in here
 export const clickedOnCounter = (counter) => {
   return (dispatch, getState) => {
     const store = getState();
@@ -51,6 +52,7 @@ export const clickedOnCounter = (counter) => {
         counter,
       },
     ]));
+    dispatch(ACTION_CREATORS.togglePlayersTurn());
   };
 };
 

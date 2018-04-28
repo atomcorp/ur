@@ -25,9 +25,6 @@ class ThrowDice extends Component<PropsType, StateType> {
       ? this.props.startRoll()
       : this.props.endRoll(this.rollDice());
   }
-  handleEndTurn = () => {
-    this.props.togglePlayers();
-  }
   rollDie(): * {
     return Math.round(Math.random());
   }
@@ -48,11 +45,6 @@ class ThrowDice extends Component<PropsType, StateType> {
               : 'Throw dice'
           }
         </button>
-        <button onClick={
-          this.handleEndTurn
-        }>
-          End turn
-        </ button>
       </div>
     );
   }
@@ -69,9 +61,7 @@ const mapDispatchToProps = (dispatch: DispatchType) => ({
   endRoll: (faces: DiceStateFacesType) => {
     dispatch(ACTION_CREATORS.throwDiceEnd(faces));
   },
-  togglePlayers: () => {
-    dispatch(ACTION_CREATORS.togglePlayersTurn());
-  },
+
 });
 
 export default connect(
