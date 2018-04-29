@@ -16,7 +16,7 @@ import {
  */
 
 
-const isProposedSquareOccupied = (counter, store, proposedSquareId) => {
+const isProposedSquareOccupied = (store, proposedSquareId) => {
   if (store.board[proposedSquareId].contents.length > 0) {
     return true;
   }
@@ -28,6 +28,10 @@ const isProposedSquareOccupiedWithOwnCounter = (squareContents, counter) => {
     (content) => content.playerId === counter.playerId
   );
 };
+
+const isProposedSquareNotTheEnd = (store, proposedSquareId) => {
+  return store.board[proposedSquareId].trackNumber !== 15 
+}
 
 const isProposedSquareOccupiedWithOpponentOnRosette = (square, counter) => {
   const doesOpponentOccupy = square.contents.some(
@@ -65,11 +69,12 @@ const isProposedSquareAnIllegalMove = (
 
   const isOccupiedWithOwnCounter =
     !squareDoesntExist &&
-    isProposedSquareOccupied(counter, store, proposedSquareId) &&
+    isProposedSquareOccupied(store, proposedSquareId) &&
     isProposedSquareOccupiedWithOwnCounter(
       store.board[proposedSquareId].contents,
       counter
-    );
+    ) && 
+    isProposedSquareNotTheEnd(store, proposedSquareId);
   if (isOccupiedWithOwnCounter) {
     dispatch(ACTION_CREATORS.showGameMessage({
       message: 'Square already has your counter in it',
@@ -77,7 +82,7 @@ const isProposedSquareAnIllegalMove = (
   }
   const isOccupiedWithOtherPlayersCounterOnARosette =
     !squareDoesntExist &&
-    isProposedSquareOccupied(counter, store, proposedSquareId) &&
+    isProposedSquareOccupied(store, proposedSquareId) &&
     isProposedSquareOccupiedWithOpponentOnRosette(
       store.board[proposedSquareId],
       counter
@@ -149,7 +154,7 @@ export const canAttackOpponentCounter = (
   proposedSquareId,
 ) => {
   if (
-    isProposedSquareOccupied(counter, store, proposedSquareId) &&
+    isProposedSquareOccupied(store, proposedSquareId) &&
     store.board[proposedSquareId].contents.some(
       (content) => content.playerId !== counter.playerId
     )
