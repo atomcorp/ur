@@ -25,7 +25,10 @@ const clickedCounter = ({
   counter,
 });
 
-const updateCounterPotential = ({moves, playerId}) => ({
+const updateCounterPotential = ({
+  moves,
+  playerId,
+}) => ({
   type: ACTION_TYPES.UPDATE_POTENTIAL_MOVES,
   moves,
   playerId,

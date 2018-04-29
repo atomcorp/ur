@@ -14,17 +14,23 @@ const handleCountersPotentialMove = ({
   playerId,
   moves
 }) => {
-  Object.keys(counters).reduce((acc, key) => {
+  return Object.keys(counters).reduce((acc, key) => {
     const counter = counters[key];
     if (counter.playerId === playerId) {
       return Object.assign(
         {},
-        counter,
+        acc,
         {
-          potentialSquareId: helpCalculateSquareId({
-            playerId,
-            trackNumber: counter.trackPosition + moves,
-          })
+          [counter.id]: Object.assign(
+            {},
+            counter,
+            {
+              potentialSquareId: helpCalculateSquareId({
+                playerId,
+                trackNumber: counter.trackPosition + moves,
+              })
+            }
+          )
         }
       )
     }
