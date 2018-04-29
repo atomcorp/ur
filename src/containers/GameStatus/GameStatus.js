@@ -33,6 +33,10 @@ const mapStateToProps = (store) => ({
 
 GameStatus.propTypes = {
   game: PropTypes.object,
+  playerAStart: PropTypes.string,
+  playerAEnd: PropTypes.string,
+  playerBStart: PropTypes.string,
+  playerBEnd: PropTypes.string,
 };
 
 export default connect(

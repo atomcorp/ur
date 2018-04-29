@@ -10,7 +10,8 @@ import {helpCalculateSquareId} from '../../methods/helpers';
 
 const updateCounter = ({
   counterId,
-  squareId,trackPosition
+  squareId,
+  trackPosition,
 }: MoveCountersType) => ({
   type: ACTION_TYPES.UPDATE_COUNTER,
   counterId,
@@ -51,7 +52,8 @@ const clickedOnCounter = (counter) => {
     dispatch(ACTION_CREATORS.updateCounter({
       counterId: counter.id,
       squareId: proposedSquareId,
-      trackPosition: store.dice.moves + store.board[counter.squareId].trackNumber,
+      trackPosition: store.dice.moves +
+        store.board[counter.squareId].trackNumber,
     }));
     dispatch(ACTION_CREATORS.updateCounterPotential({
       moves: 0,

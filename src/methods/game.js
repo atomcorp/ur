@@ -30,8 +30,8 @@ const isProposedSquareOccupiedWithOwnCounter = (squareContents, counter) => {
 };
 
 const isProposedSquareNotTheEnd = (store, proposedSquareId) => {
-  return store.board[proposedSquareId].trackNumber !== 15 
-}
+  return store.board[proposedSquareId].trackNumber !== 15;
+};
 
 const isProposedSquareOccupiedWithOpponentOnRosette = (square, counter) => {
   const doesOpponentOccupy = square.contents.some(
@@ -73,7 +73,7 @@ const isProposedSquareAnIllegalMove = (
     isProposedSquareOccupiedWithOwnCounter(
       store.board[proposedSquareId].contents,
       counter
-    ) && 
+    ) &&
     isProposedSquareNotTheEnd(store, proposedSquareId);
   if (isOccupiedWithOwnCounter) {
     dispatch(ACTION_CREATORS.showGameMessage({

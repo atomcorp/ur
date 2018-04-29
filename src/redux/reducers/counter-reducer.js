@@ -12,7 +12,7 @@ const initalState = constructCounters();
 const handleCountersPotentialMove = ({
   counters,
   playerId,
-  moves
+  moves,
 }) => {
   return Object.keys(counters).reduce((acc, key) => {
     const counter = counters[key];
@@ -28,15 +28,15 @@ const handleCountersPotentialMove = ({
               potentialSquareId: helpCalculateSquareId({
                 playerId,
                 trackNumber: counter.trackPosition + moves,
-              })
+              }),
             }
-          )
+          ),
         }
-      )
+      );
     }
     return acc;
-  }, {})
-}
+  }, {});
+};
 
 const counters = (
   state: CountersStateType = initalState,
@@ -66,7 +66,7 @@ const counters = (
             playerId: action.playerId,
             moves: action.moves,
           })
-        )
+        );
     default:
       return state;
   }
