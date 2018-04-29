@@ -7,11 +7,11 @@ import {
   moveArrayOfCountersFromTo,
   addAllCounters,
 } from './board-actions';
-import {
-  togglePlayersTurn,
-  playerGetsTokenHome,
-  playerHasTokenReset,
-} from './player-actions';
+// import {
+//   togglePlayersTurn,
+//   playerGetsTokenHome,
+//   playerHasTokenReset,
+// } from './player-actions';
 import {
   updateCounter,
   clickedOnCounter,
@@ -23,6 +23,7 @@ import {
 } from './game-actions';
 import {
   haslandedOnRosette,
+  togglePlayersTurn,
 } from './turn-actions';
 
 export {
@@ -31,8 +32,8 @@ export {
   moveArrayOfCountersFromTo,
   addAllCounters,
   togglePlayersTurn,
-  playerGetsTokenHome,
-  playerHasTokenReset,
+  // playerGetsTokenHome,
+  // playerHasTokenReset,
   updateCounter,
   clickedOnCounter,
   updateCounterPotential,

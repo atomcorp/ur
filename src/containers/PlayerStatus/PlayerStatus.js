@@ -12,7 +12,7 @@ const PlayerStatus = ({playersTurn}: string) => (
 );
 
 const mapStateToProps = (store: StoreType) => ({
-  playersTurn: store.players[store.turn.playersTurn].name,
+  playersTurn: store.turn.playersTurn,
 });
 
 export default connect(mapStateToProps)(PlayerStatus);
