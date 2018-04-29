@@ -3,7 +3,9 @@ Todo:
   ✔ how to populate board from the start? @done(18-04-28 22:46)
   ✘ need to rethink pieces redux @cancelled(18-04-28 22:46)
   ✔ add rosette notifiers @done(18-04-28 23:16)
-  ☐ allow counters sharing same space when it's the last space
+  ✔ allow counters sharing same space when it's the last space @done (2018-4-29 16:06:16)
+  ☐ detect illegal moves automatically, this will allow us to check if no legal moves are possible and can toggle player turn
+  ☐ On counter hover demonstrate move
 
 Refactor:
   When the dice has been rolled we should update every counter with potential move
