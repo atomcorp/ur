@@ -15,6 +15,7 @@ import {
 import {
   updateCounter,
   clickedOnCounter,
+  updateCounterPotential,
 } from './counter-actions';
 import {
   showGameMessage,
@@ -34,6 +35,7 @@ export {
   playerHasTokenReset,
   updateCounter,
   clickedOnCounter,
+  updateCounterPotential,
   showGameMessage,
   hideGameMessage,
   handleOptionsAfterThrow,

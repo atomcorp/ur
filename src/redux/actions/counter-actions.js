@@ -8,9 +8,13 @@ import {
 } from '../../methods/game';
 import {helpCalculateSquareId} from '../../methods/helpers';
 
-const updateCounter = ({counterId, squareId}: MoveCountersType) => ({
+const updateCounter = ({
+  counterId,
+  squareId,trackPosition
+}: MoveCountersType) => ({
   type: ACTION_TYPES.UPDATE_COUNTER,
   counterId,
+  trackPosition,
   squareId,
 });
 
@@ -21,8 +25,14 @@ const clickedCounter = ({
   counter,
 });
 
+const updateCounterPotential = ({moves, playerId}) => ({
+  type: ACTION_TYPES.UPDATE_POTENTIAL_MOVES,
+  moves,
+  playerId,
+});
+
 // need to simplify the logic going in here
-export const clickedOnCounter = (counter) => {
+const clickedOnCounter = (counter) => {
   return (dispatch, getState) => {
     const store = getState();
     const proposedSquareId = helpCalculateSquareId({
@@ -38,6 +48,7 @@ export const clickedOnCounter = (counter) => {
     dispatch(ACTION_CREATORS.updateCounter({
       counterId: counter.id,
       squareId: proposedSquareId,
+      trackPosition: store.dice.moves + store.board[counter.squareId].trackNumber,
     }));
     dispatch(ACTION_CREATORS.moveArrayOfCountersFromTo([
       {
@@ -58,4 +69,6 @@ export const clickedOnCounter = (counter) => {
 export {
   updateCounter,
   clickedCounter,
+  clickedOnCounter,
+  updateCounterPotential,
 };

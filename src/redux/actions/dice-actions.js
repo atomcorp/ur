@@ -18,12 +18,17 @@ const throwDiceEnd = (faces: FacesType, moves) => ({
 });
 
 const handleOptionsAfterThrow = (faces) => {
-  return (dispatch, store) => {
+  return (dispatch, getState) => {
+    const store = getState();
     const moves = faces.reduce(
       (acc: number, val: number) => acc + val,
       0
     );
     dispatch(throwDiceEnd(faces, moves));
+    dispatch(ACTION_CREATORS.updateCounterPotential({
+      moves,
+      playerId: store.turn.playersTurn,
+    }));
     // if player throws a zero, swap sides
     if (moves < 1) {
       dispatch(ACTION_CREATORS.togglePlayersTurn());

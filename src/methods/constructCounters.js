@@ -18,6 +18,8 @@ const constructPlayerCountersSet = (playerId: string) => {
     return Object.assign({}, acc, {
       [`${playerId}-counter--${index + 1}`]: {
         squareId: `${playerId}-0`,
+        potentialSquareId: `${playerId}-0`,
+        trackPosition: 0,
         playerId: playerId,
         id: `${playerId}-counter--${index + 1}`,
       },
