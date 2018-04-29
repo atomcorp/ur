@@ -165,6 +165,10 @@ export const canAttackOpponentCounter = (
       squareId: proposedSquareId,
       trackPosition: store.board[proposedSquareId].trackNumber,
     }));
+    dispatch(ACTION_CREATORS.updateCounterPotential({
+      moves: 0,
+      playerId: counter.playerId,
+    }));
     dispatch(ACTION_CREATORS.moveArrayOfCountersFromTo([
       {
         from: counter.squareId,

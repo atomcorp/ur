@@ -53,6 +53,10 @@ const clickedOnCounter = (counter) => {
       squareId: proposedSquareId,
       trackPosition: store.dice.moves + store.board[counter.squareId].trackNumber,
     }));
+    dispatch(ACTION_CREATORS.updateCounterPotential({
+      moves: 0,
+      playerId: counter.playerId,
+    }));
     dispatch(ACTION_CREATORS.moveArrayOfCountersFromTo([
       {
         from: counter.squareId,

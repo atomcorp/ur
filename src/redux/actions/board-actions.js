@@ -29,7 +29,6 @@ type MovesType = [
 export const moveArrayOfCountersFromTo = (moves: Array<MovesType>) => {
   return (dispatch, getState) => {
     const latestState = getState();
-    console.log(latestState, moves)
     moves.forEach((move) => {
       dispatch(addRemoveCounters(
         Object.assign(
