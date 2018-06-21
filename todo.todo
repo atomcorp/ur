@@ -14,4 +14,5 @@ Refactor:
   We can just feed one counters data to one function for it to calc move result
 
 Ideas:
-  ✔ Add keyboard shortcuts (space = roll dice / move piece, ctrl = scroll pieces) @done(18-04-28 23:16)
+  ☐ Add keyboard shortcuts (space = roll dice / move piece, ctrl = scroll pieces)
+  ☐ turn board into a drum machine (http://www.nullpointer.co.uk/content/drum-machine-draughts/)
